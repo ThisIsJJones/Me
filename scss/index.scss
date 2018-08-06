@@ -1,0 +1,215 @@
+
+// n is number of stars required
+@function multiple-box-shadow ($n){
+$value: '#{random(2000)}px #{random(3000)}px #FFF';
+    @for $i from 2 through $n{
+        $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+    }
+
+    @return unquote($value);
+}
+
+$shadows-small:  multiple-box-shadow(800);
+$shadows-medium: multiple-box-shadow(220);
+$shadows-big:    multiple-box-shadow(150);
+
+#profileBackground{
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 90%);
+    overflow: hidden;
+}
+
+#stars{
+    width: 1.4px;
+    height: 1.4px;
+    background: transparent;
+    box-shadow: $shadows-small;
+    animation: animStarY 150s linear infinite;
+}
+
+#stars2{
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    animation: animStarY 100s linear infinite;
+}
+
+#stars3{
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+    animation: animStarY 50s linear infinite;
+}
+
+#sway{
+    animation: animStarX 20s ease-in-out infinite;
+}
+
+#content{
+    height:100%;
+}
+
+#title{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+
+    color: #FFF;
+    text-align: center;
+    font-family: 'lato',sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    letter-spacing: 3px;
+    user-select: none;
+    margin-top: -60px;
+    padding-left: 10px;
+    animation: slideInFromTop 10s;
+}
+
+span{
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes slideInFromTop{
+    from {overflow: hidden; height: 0px; opacity: 0;}
+    to {height: 300px; opacity: 1;}
+}
+
+@keyframes animStarY{
+    0% {transform: translateY(0px); opacity: 0}
+    25% {opacity: .5}
+    75% {opacity: 1}
+    100% {transform: translateY(-2000px);}
+}
+
+$xDistance: 20;
+@keyframes animStarX{
+    0% {transform: translateX(0px)}
+    25% {transform: translateX($xDistance + px)}
+    50% {transform: translateX(0px)}
+    75% {transform: translateX($xDistance + px)}
+    100% {transform: translateX(0px)}
+}
+
+$diff: 3000;
+.letterLift{
+    text-transform: uppercase;
+    position: relative;
+    animation: lift .3s linear;
+&-s{
+     animation-delay: 150+$diff+ms;
+ }
+&-o1{
+     animation-delay: 250+$diff+ms;
+ }
+&-f{
+     animation-delay: 350+$diff+ms;
+ }
+&-t{
+     animation-delay: 450+$diff+ms;
+ }
+&-w{
+     animation-delay: 550+$diff+ms;
+ }
+&-a{
+     animation-delay: 650+$diff+ms;
+ }
+&-r1{
+     animation-delay: 750+$diff+ms;
+ }
+&-e1{
+     animation-delay: 850+$diff+ms;
+ }
+&-d{
+     animation-delay: 950+$diff+ms;
+ }
+&-e2{
+     animation-delay: 1050+$diff+ms;
+ }
+&-v{
+     animation-delay: 1150+$diff+ms;
+ }
+&-e3{
+     animation-delay: 1250+$diff+ms;
+ }
+&-l{
+     animation-delay: 1350+$diff+ms;
+ }
+&-o2{
+     animation-delay: 1450+$diff+ms;
+ }
+&-p{
+     animation-delay: 1550+$diff+ms;
+ }
+&-e4{
+     animation-delay: 1650+$diff+ms;
+ }
+&-r2{
+     animation-delay: 1750+$diff+ms;
+ }
+}
+
+.letterLift:hover{
+    top: -3px;
+}
+
+
+
+@keyframes lift{
+    0% {top: 0px; }
+    50% { top: -15px;}
+    100% {top: 0px}
+}
+
+
+#period{
+    position: relative;
+    opacity: 0;
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    animation: coastRight 1.95s linear 150+$diff+ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes coastRight{
+    from{opacity: 1; transform: translateX(-370px);}
+    to{opacity: 1; transform: translate(0px);}
+}
+
+#options{
+    position: relative;
+    top: 92%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    animation: fadeIn 1s linear 1 5.3s;
+    animation-fill-mode: forwards;
+    position: fixed;
+}
+
+#options a{
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow: 0px 0px 30px #e7e7e7;
+}
+
+#options a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0px 0px 20px green;
+}
+
+@keyframes fadeIn {
+    from{opacity: 0; visibility: visible;}
+    to{opacity: 1; visibility: visible;}
+}
