@@ -1,0 +1,75 @@
+
+        onchorontent{
+    position: relative;
+    top: 20%;
+    padding: 20px;
+    word-break: break-word;
+    text-align: center;
+    right: 100px;
+}
+
+
+#leftContent{
+    text-align: center;
+    padding-right: 90px;
+
+}
+
+#rightContent{
+    text-align: right;
+    padding-left: 90px;
+}
+
+#leftContent, #rightContent{
+    position: relative;
+    display: inline-block;
+    max-width: 500px;
+    vertical-align: top;
+}
+
+#leftContent h2, #rightContent h2{
+    text-align: center;
+    color: green;
+}
+
+#leftContent p, #rightContent p span{
+    background: -webkit-linear-gradient(white 30%, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+}
+
+#leftContent p{
+    font-size: 18px;
+    text-align: left;
+}
+
+#rightContent p strong{
+    color: white;
+    font-size: 20px;
+}
+
+#profilePicture{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border: 6px solid green;
+
+}
+
+
+/*#leftProfile span a{*/
+    /*padding-left: 25px;*/
+    /*padding-right: 25px;*/
+/*}*/
+
+#map:hover{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+}
