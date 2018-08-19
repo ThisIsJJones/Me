@@ -53,12 +53,12 @@
                 <div id="period"></div>
             </div>
             <div id="options">
-                <a href="#here"><i class="fa fa-chevron-circle-down" style="font-size: 50px"></i></a>
+                <a href="#Me"><i class="fa fa-chevron-circle-down" style="font-size: 50px"></i></a>
             </div>
         </div>
 
     </div>
-    <div data-ancho="here" class="section" style="background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
+    <div class="section" style="background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
             <div id="profileContent">
                 <div id="leftContent">
                     <h2>
@@ -371,15 +371,17 @@
         //options here
         // autoScrolling:true,
         // scrollHorizontally: true
-        verticalCentered: false,
+        anchors: ['page0', 'Me', 'page2', 'page3', 'page4'],
+	verticalCentered: false,
         navigation: true,
         navigationTooltips: ['Home', 'Me', 'Abilities', 'Experience'],
         navigationPosition: 'left',
         onLeave: function(origin, destination, direction){
             if(destination.index != 0){
+		document.getElementById("quoteContainer").style="display: block;"
             document.getElementById("quoteContent").innerHTML = "\"" + quotes[Math.floor((Math.random()*quotes.length))] + "\" - Dr. Suess";
             }else{
-               document.getElementById("quoteContent").innerHTML = ""
+		document.getElementById("quoteContainer").style = "display: none;"
             }
         }
     });
