@@ -197,6 +197,26 @@ span {
   display: none;
 }
 
+.goldBanner{
+    position: absolute;
+    left: 130px;
+    top: 0px;
+    background: #ff9f35;
+    color: black;
+    width: 90px;
+    height: 30px;
+    font-size: 1.5em;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .2s;
+}
+
+.goldBanner:hover{
+    height: 80px;
+    color: green;
+}
+
 /*#fp-nav ul li:nth-child(1){*/
   /*top: 30px;*/
 /*}*/
