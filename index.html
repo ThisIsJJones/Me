@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/profile.css">
     <link rel="stylesheet" type="text/css" href="css/abilities.css">
-
+    <link rel="stylesheet" type="text/css" href="css/experience.css">
 
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,10 +28,10 @@
         <div id="stars3"></div>
 
         <div id="content" >
-            <div id="title" >
+            <div class="gradient" id="title" >
                 <span style="letter-spacing: 22px">Jordan Jones</span>
                 <br>
-                <span style="font-size: 12pt;">
+                <span class="gradient" style="font-size: 12pt;">
                     <span class="letterLift letterLift-s">S</span>
                     <span class="letterLift letterLift-o1">o</span>
                     <span class="letterLift letterLift-f">f</span>
@@ -59,15 +59,16 @@
         </div>
     </div>
     <div class="section" style="background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
-           <div class="goldBanner">
+           <div class="pageBanner">
                     Me
             </div>
             <div id="profileContent">
                 
                 <div id="leftContent">
                     <h2>
-                       About<div style="display: inline;color:#ff9f35;font-size: 1.3em">_</div>
+                       About
                     </h2>
+                    <div class="underscore">_</div>
                     <p>
                         <!--I'm student at University of Wisconsin - Eau Claire pursuing a degree in Computer Science.-->
                         Hello, welcome.
@@ -82,8 +83,9 @@
                 <img id="profilePicture" src="images/Me.jpg">
                 <div id="rightContent">
                     <h2>
-                        Details<div style="display: inline;color:#ff9f35;font-size: 1.3em">_</div>
+                        Details
                     </h2>
+                    <div class="underscore">_</div>
                     <p>
                         <strong>Name:</strong>
                         <br>
@@ -124,214 +126,309 @@
             </div>
     </div>
     <div class="section" style=" background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 90%);">
-        <div class="goldBanner">
+        <div class="pageBanner">
                     Abilities
             </div>
         <div>
-            <ul class="abilityContent">
-                <li >
+            
+            <span class="abilityContent">
+                <ul id="showAbility">
+                <h2>Languages</h2>
+                    <hr>
+                <li>
                     <span>Java</span>
-                    <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                    <span id="stat4" class="abilityStat">
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>C</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>C++</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>Python</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
-                    <span>Mobile Development</span>
+                    <span>Swift / Xcode</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>HTML</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>Javascipt</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>CSS</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                    </span>
-                </li>
-                <li>
-                    <span>Angular 2+</span>
-                    <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>Node.js</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                    </span>
-                </li>
-                <li>
-                    <span>Python</span>
-                   <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>Ruby</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
+                
                 <li>
                     <span>SQL</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </span>
+                </li>
+                </ul>
+                <ul>
+                <h2>Frameworks</h2>
+                    <hr>
+                <li>
+                    <span>Angular 2+</span>
+                    <span class="abilityStat">
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>Spring Framework</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
+                    <li>
+                    <span>Bootstrap</span>
+                    <span class="abilityStat">
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </span>
+                </li>
+                    <li>
+                    <span>Express.js</span>
+                    <span class="abilityStat">
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </span>
+                </li>
+                    <li>
+                    <span>Hibernate</span>
+                    <span class="abilityStat">
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </span>
+                </li>
+                </ul>
+                <ul>
+                <h2>Misc.</h2>
+                    <hr>
                 <li>
                     <span>Agile Development</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
-                    <span>Gang Of Four Design Patterns</span>
+                    <span>GoF Design Patterns</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>MVC Pattern</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </span>
+                </li>
+                <li>
+                    <span>REST API</span>
+                    <span class="abilityStat">
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
                 <li>
                     <span>JSON</span>
                    <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
                     </span>
                 </li>
                 <li>
                     <span>Debugging</span>
                     <span class="abilityStat">
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
-                        <span class="glyphicon glyphicon-star filled"></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
                     </span>
                 </li>
             </ul>
+            </span>
         </div>
     </div>
     <div class="section" style=" background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
-	Work with stores, Help desk and technical support Team Members to troubleshoot problems as they arise.
-	Develop and maintain applications for Menards stores and external web sites promarily using Java.
+        <div class="pageBanner">
+             Experience
+        </div>
+        
+        <div id="jobs">
+            <div id=menardsExperience>
+            <span class="jobTitle">
+             <strong>Menards Inc.</strong>
+                <br>
+            <p>May 2017 - Current</p>
+            </span>
+            <span class="jobDesc">
+                <strong>Point of Sale - Intern</strong><br>
+                <strong>Backend Developer</strong>
+                <br>
+                <ul>
+                    <li>Work with stores, Help desk and technical support Team Members to troubleshoot problems as they arise.
+                    </li>
+                    <li>Develop and maintain applications for Menards stores and external web sites primarily using Java
+                    </li>
+                    <li>Cooperate on the back-end team to modify, implement, and maintain REST/SOAP services
+                    </li>
+                    <li>Analyze data using Splunk to gain better insight on how our services are being used
+                    </li>
+                    <li>Make daily use of several Atlassian software products to manage projects and to communicate efficiently with team members
+                    </li>
+                    <li>Utilized frameworks Angular and Spring to develop the front and back-end of an in-house utility 
+                    </li>
+                    <li>Gave teams members the ability to create needed documents and search store details more efficiently and user-friendly 
+                    </li>
+                     <div class="location"> Eau Claire, WI</div>
+                   </ul>
+               
+            </span>
+            </div>
+            <div id=michaelExperience>
+            <span class="jobTitle">
+             <strong>Michael Angelo's</strong>
+                <br>
+            <p>Summer '16</p>
+            </span>
+            <span class="jobDesc">
+                <strong>Summer Intern</strong>
+                <br>
+                <ul>
+                    <li>Created a user-friendly interface to access data, which allowed parts to be found easily during reorganization</li>
+                    <li>Aided mechanics in the process of efficiently finding the necessary parts for a machine</li>
+                    <li>This program significantly reduced machine down time, saving the company time, frustration, and money</li>   
+                     <div class="location"> Austin, TX</div>
+                   </ul>
+            </span>
+            </div>
+        </div>
     </div>
     <div class="section" style="background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 90%);">
 
     </div>
 
 </div>
-<div id="quoteContainer">
+<div class="gradient" id="quoteContainer">
     <span id="quoteContent"></span>
 </div>
 
@@ -343,7 +440,7 @@
     <!--<a><span>CONTACT</span></a>-->
 <!--</div>-->
 
-
+    
 <script src="js/fullpage.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
