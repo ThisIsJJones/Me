@@ -5,11 +5,11 @@
     text-align: left;
 }
 
-.menardsExperience{
-    
+#menardsExperience{
+    margin-bottom: 20px;
 }
 
-.michaelExperience{
+#michaelExperience{
     
 }
 
@@ -21,9 +21,15 @@
     color: #ff9f35;
 }
 
+.jobTitle strong{
+    background: -webkit-linear-gradient(#ff9f35 30%, #38495a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.4em;
+}
+
 .jobTitle p{
     padding-top: 10px;
-    
 }
 
 .jobDesc{
