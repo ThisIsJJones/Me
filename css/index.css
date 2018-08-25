@@ -184,8 +184,10 @@
   position: absolute;
   background: rgba(255,255,255, .4);
   border-radius: 10px;
-  top: 0;
-  left: 0;
+}
+
+.fp-right{
+    right: 17px;
 }
 
 #quoteContainer{

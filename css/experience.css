@@ -19,6 +19,8 @@
     height: 100px;
     width: 190px;
     color: #ff9f35;
+        text-shadow: .1px .5px 130px white; 
+
 }
 
 .jobTitle strong{
@@ -49,7 +51,7 @@
     list-style: none;
     color: white;
     letter-spacing: 1px;
-    font-size: .95em;
+    font-size: 1em;
 }
 
 .jobDesc li::before{
@@ -63,13 +65,17 @@
     float: left;
     padding-left: 10px;
     color: green;
+    
+    letter-spacing: 1.5px;
 }
 
 .location{
     font-family: 'Glyphicons Halflings';
     padding-top: 4px;
+    color: darkseagreen;
 }
 
 .location::before{
      content: "\e062";
+    color: darkseagreen;
 }

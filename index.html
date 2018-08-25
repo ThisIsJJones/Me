@@ -59,6 +59,7 @@
         </div>
     </div>
     <div class="section" style="background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
+        <div class="slide">
            <div class="pageBanner">
                     Me
             </div>
@@ -102,6 +103,10 @@
                         <strong>Hometown:</strong>
                         <br>
                         <span>Pewaukee, WI</span>
+                        <br>
+                        <strong>Willing to relocate:</strong>
+                        <br>
+                        <span>Definitely</span>
                     </p>
                 </div>
                 <script>
@@ -124,6 +129,12 @@
                 <!--<p>Born and raised: Pewaukee, Wisconsin</p>-->
                 <!--<img id="map" src="/Users/jjones/Desktop/Me/images/Hometown.png" width="200" height="200">-->
             </div>
+            </div>
+        <div class="slide">
+            <div class="pageBanner">
+                    Me
+            </div>
+        </div>
     </div>
     <div class="section" style=" background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 90%);">
         <div class="pageBanner">
@@ -385,7 +396,7 @@
                 <strong>Backend Developer</strong>
                 <br>
                 <ul>
-                    <li>Work with stores, Help desk and technical support Team Members to troubleshoot problems as they arise.
+                    <li>Work with stores, help desk, and technical support Team Members to troubleshoot problems as they arise
                     </li>
                     <li>Develop and maintain applications for Menards stores and external web sites primarily using Java
                     </li>
@@ -393,11 +404,11 @@
                     </li>
                     <li>Analyze data using Splunk to gain better insight on how our services are being used
                     </li>
-                    <li>Make daily use of several Atlassian software products to manage projects and to communicate efficiently with team members
+                    <li>Make daily use of several Atlassian software products to manage projects and to communicate efficiently with Team Members
                     </li>
-                    <li>Utilized frameworks Angular and Spring to develop the front and back-end of an in-house utility 
+                    <li>Utilize frameworks Angular and Spring to develop the front and back-end of an in-house utility 
                     </li>
-                    <li>Gave teams members the ability to create needed documents and search store details more efficiently and user-friendly 
+                    <li>Gave Team Members the ability to create needed documents and search store details more efficiently and user-friendly 
                     </li>
                      <div class="location"> Eau Claire, WI</div>
                    </ul>
@@ -424,7 +435,23 @@
         </div>
     </div>
     <div class="section" style="background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 90%);">
-
+        <div class="pageBanner">
+            Education
+        </div>
+        University of Wisconsin - Eau Claire
+        <br>
+        Courses
+        <ul>
+            <li> CS 145 – Intro Object Oriented Programming</li>
+            <li>CS 245 – Advanced Programming and Data Structures</li>
+            <li>CS 260 – Database Systems </li>
+            <li>CS 268 – Web Systems</li>
+            <li>CS 252 – Computer Systems</li>
+            <li>CS 352 – Computer Architecture  </li>
+            <li>CS 335 – Algorithms</li>
+            <li>CS 436 – Mobile Development</li>
+            <li>CS 355 – Software Engineering</li>
+        </ul>
     </div>
 
 </div>
@@ -432,15 +459,6 @@
     <span id="quoteContent"></span>
 </div>
 
-
-<!--<div id="options">-->
-    <!--<a><span>PROFILE</span></a>-->
-    <!--<a><span>EDUCATION</span></a>-->
-    <!--<a><span>SKILLS</span></a>-->
-    <!--<a><span>CONTACT</span></a>-->
-<!--</div>-->
-
-    
 <script src="js/fullpage.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
@@ -463,21 +481,44 @@
         "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.",
         "Today was good. Today was fun. Tomorrow is another one."];
 
-    new fullpage('#fullpage', {
+    var fullpage = new fullpage('#fullpage', {
         //options here
         // autoScrolling:true,
         // scrollHorizontally: true
         anchors: ['page0', 'Me', 'page2', 'page3', 'page4'],
 	   verticalCentered: false,
         navigation: true,
-        navigationTooltips: ['Home', 'Me', 'Abilities', 'Experience'],
+        navigationTooltips: ['Home', 'Me', 'Abilities', 'Experience', 'Education'],
         navigationPosition: 'left',
+        slidesNavigation: false,
+        loopHorizontal: false,
         onLeave: function(origin, destination, direction){
             if(destination.index != 0){
-		document.getElementById("quoteContainer").style="display: block;"
+		      document.getElementById("quoteContainer").style="display: block;"
             document.getElementById("quoteContent").innerHTML = "\"" + quotes[Math.floor((Math.random()*quotes.length))] + "\" - Dr. Suess";
             }else{
-		document.getElementById("quoteContainer").style = "display: none;"
+		      document.getElementById("quoteContainer").style = "display: none;"
+            }
+        },
+        onSlideLeave: function(section, origin, destination, direction){
+            if(destination.index == 1){
+                document.getElementById('fp-nav').classList.remove('fp-left');
+                document.getElementById('fp-nav').classList.add('fp-right');
+                var sections = document.getElementById('fp-nav').children[0].childNodes.length;
+                var index = 0;
+                for(index=0; index<sections-1; index++){
+                    document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-left')
+                    document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-right')
+                }
+            }else{
+                document.getElementById('fp-nav').classList.remove('fp-right');
+                document.getElementById('fp-nav').classList.add('fp-left');
+                var sections = document.getElementById('fp-nav').children[0].childNodes.length;
+                var index = 0;
+                for(index=0; index<sections-1; index++){
+                    document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-right')
+                    document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-left')
+                }
             }
         }
     });
