@@ -164,12 +164,33 @@
                 
             </div>
             <div class="mainInterest">
-            <p>
-                I'm a simple person I like sports, the outdoors, and pondering about astronomy conundrums. Other than that I spend my time hanging out with friends and family or just learning something new. Whether it be a new programming language, a new tech gadget, or coding pratices that aren't yet under my belt. My main interest in the tech industry is yet undertermined, however, Mobile Technology, Security, Machine Learning, and Internet of Things (IoT) are all interesting.
+                <script>
+var i = 0;
+var txt = "I'm a simple person: I like football and most competitive activities, as well as the outdoors, and pondering astronomy conundrums. Other than those I spend my time hanging out with friends and family or just spending my time learning something new. Whether that be a new programming language or an unknown feature in one I know, or learning about a tech gadget like an arduino or raspberry pi, or coding practices that aren't yet under my belt. My main interest in the tech industry is undertermined, however, Mobile Technology, Security, Machine Learning, and the Internet of Things (IoT) are all interesting.";
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typeWriter").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }else{
+     txt = "Oh and the quotes at the bottom are from the one and the only Theodor Seuss Geisel. His quotes are great and if not bringing a smile to my face it at least reminds me of the life lessons that they have to offer. Enjoy!"
+      i = 0;
+      document.getElementById("typeWriter").innerHTML += "<br><br>";
+      function typeWriter2(){
+          if (i < txt.length) {
+            document.getElementById("typeWriter").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter2, speed);
+          }
+        }
+      typeWriter2();
+    }
+  } 
+</script>
                 
-                <br>
-                <br>
-                Oh and the quotes at the bottom are from the one and the only Theodor Seuss Geisel. His quotes are great and if not bringing a smile to my face it at least reminds me of the life lessons that they have to offer. Enjoy!  
+            <p id="typeWriter">
             </p>
             </div>
         </div>
@@ -637,6 +658,8 @@
                     document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-left')
                     document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-right')
                 }
+                
+                typeWriter();
             }else{
                 document.getElementById('fp-nav').classList.remove('fp-right');
                 document.getElementById('fp-nav').classList.add('fp-left');
@@ -646,6 +669,8 @@
                     document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-right')
                     document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-left')
                 }
+                
+                
             }
             
             
