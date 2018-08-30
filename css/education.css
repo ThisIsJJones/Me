@@ -1,0 +1,73 @@
+#imageContent{
+    position: relative;
+    top: 0px;
+    text-align: center;  
+}
+
+#uwecLogo{
+    width: 170px;
+    height: 170px;
+}   
+
+.animateUwecLogo{
+    animation: rotateImage 3s 1s;
+}
+
+@keyframes rotateImage{
+    0%{transform: rotateY(0deg);}
+    70%{transform: rotateY(680deg);}
+    85%{transform: rotateY(790deg);}
+    100%{transform: rotateY(720deg);}
+}
+
+#educationContent{
+    position: relative;
+    top: 20px;
+    margin-left: 50px;
+    height: 100%;
+    text-align: center;
+}
+
+#educationContent ul{
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    text-align: left;
+    padding: 40px;
+    padding-top: 0;
+    height: 400px;
+    border-bottom: 1px green solid;
+    border-top: 1px green solid;
+    border-radius: 30px;
+    width: 350px;
+    margin-right: 50px;
+    overflow: hidden;
+}
+
+#educationContent hr{
+    border-color: #ff9f35;
+}
+
+#educationContent ul h2{
+    text-align: left;
+     background: -webkit-linear-gradient(green, #38495a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#educationContent li{
+    width: 300px;
+    padding-top: 4px;
+    color: white;
+}
+
+#educationContent li:hover{
+    font-size: 1.1em;
+    background: rgba(255,255,255,.3);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+#educationEauClaire li span:nth-child(2){
+    float: right;
+}

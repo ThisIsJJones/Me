@@ -1,7 +1,8 @@
 #profileBackground {
   height: 100%;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 90%);
-  overflow: hidden; }
+  overflow: hidden; 
+}
 
 #stars {
   width: 1.4px;
@@ -147,6 +148,7 @@
   to {
     opacity: 1;
     transform: translate(0px); } }
+
 #options {
   position: relative;
   top: 92%;
@@ -157,13 +159,28 @@
   text-align: center;
   animation: fadeIn 1s linear 1 5.3s;
   animation-fill-mode: forwards;
-  position: fixed; }
+  position: fixed;
+}
+
 
 #options a {
   color: whitesmoke;
   padding-left: 20px;
   padding-right: 20px;
-  text-shadow: 0px 0px 30px #e7e7e7; }
+  text-shadow: 0px 0px 30px #e7e7e7; 
+}
+
+#options a i{
+     animation:  bob 1.4s linear 1s infinite;
+}
+
+@keyframes bob{
+    0%{transform: translateY(0px);}
+    20%{transform: translateY(15px);}
+    50%{transform: translateY(10px);}
+    75%{transform: translateY(3px);}
+    100%{transform: translateY(0px);}
+}
 
 #options a:hover {
   text-decoration: none;
@@ -178,12 +195,48 @@
     opacity: 1;
     visibility: visible; } }
 
-/*# sourceMappingURL=index.css.map */
-
 #fp-nav{
-  position: absolute;
-  background: rgba(255,255,255, .4);
-  border-radius: 10px;
+    width: 27px;
+    opacity: 1;
+    position: absolute;
+    background: rgba(255,255,255, .4);
+    border-radius: 10px;
+    transition: width .7s;
+    overflow: hidden;
+}
+
+@keyframes showUp{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+#fp-nav:hover{
+    width: 100px;
+    background: rgba(255,159,53, .9);  
+}
+
+.removeNavBar{
+    animation: removeBar .6s;
+    animation-fill-mode: forwards;
+}
+
+.addNavBar{
+    animation: addBar .6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes removeBar{
+    0%{height: 107px;}
+    100%{height: 0;}
+}
+
+@keyframes addBar{
+    0%{height: 0px;}
+    100%{height: 107px;}
+}
+
+.fp-right:hover ul{
+    float: right;
 }
 
 .fp-right{
@@ -201,7 +254,7 @@
 }
 
 .pageBanner{
-    position: absolute;
+    position: relative;
     left: 130px;
     top: 0px;
     background: #ff9f35;
@@ -216,23 +269,16 @@
 }
 
 .pageBanner:hover{
+/*
     height: 80px;
     color: green;
+*/
 }
 
-/*#fp-nav ul li:nth-child(1){*/
-  /*top: 30px;*/
-/*}*/
-/*#fp-nav ul li:nth-child(2){*/
-  /*top: 60px;*/
-/*}*/
-/*#fp-nav ul li:nth-child(3) {*/
-  /*top: 90px;*/
-/*}*/
-/*#fp-nav ul li:nth-last-child(2){*/
-  /*top: 120px;*/
-/*}*/
-/*#fp-nav ul li:last-child {*/
-  /*top: 150px;*/
-/*}*/
+.fp-next:hover{
+    border-color: transparent transparent transparent #ff9f35!important;
+}
 
+.fp-prev:hover{
+    border-color: transparent #ff9f35 transparent transparent!important;
+}
