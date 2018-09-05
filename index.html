@@ -140,7 +140,8 @@
                     <p class="top-left">
                         Football
                         <br>
-                        I grew up playing since 5th grade. It was inevitable of me playing, with my dad and two siblings leaving shoes to fill. Once I grew up to the high school level, I eventually was one of the leading running backs. I was fortunate to get the opportunity to play college ball and continue my education in college. I decided to attented Eau Claire which lasted until my 2nd year and I decided college football wasn't for me. Football will always be a big part of my life as I have learned so many lessons that drive my day to day actions.  
+                        <br>
+                        I grew up playing since 5th grade. It was inevitable of me playing, with my dad and two siblings leaving shoes to fill. Once I grew up to the high school level, I eventually was one of the leading running backs. I was fortunate to get the opportunity to continue my education in college and play college ball. Football will always be a big part of my life as I have learned so many lessons that drive my day to day actions.  
                     </p>
                     <img src="images/football.jpg">
                 </span>
@@ -148,7 +149,8 @@
                     <p class="top-left">
                         Cabin
                         <br>
-                        Fishing, skiing, eating smores, and hanging out with friends and family are all key elements of being able to escape up north. Given the option I would rather be outdoors whether that be at a cabin or at a National Park tenting. I can't wait to explore more of the outdoors on this beautiful Earth.
+                        <br>
+                        Fishing, skiing, eating smores, and hanging out with friends and family are all key elements of being able to escape up north. Given the option I would rather be outdoors whether that be at a cabin or tenting at a National Park. I can't wait to explore more of the outdoors on this beautiful Earth.
                     </p>
                     <img src="images/temp_cabin.jpg">
                 </span>
@@ -157,7 +159,8 @@
                     <p class="top-left">
                         Astronomy
                         <br>
-                        A love for the sky. There is something about seeing planets that are millions of miles away and stars that make all sorts of images in the night sky. But beyond just seeing these objects I enjoy learning how <i>it</i> all came to be. A person I enjoy listening to, that has great knowledge in this field, is astrophysicist Neil deGrasse Tyson. Other than his soothing voice, I like listening to the random questions he answers with extreme detail.
+                        <br>
+                        A love for the sky. There is something about seeing planets that are millions of miles away and stars that make all sorts of images in the night sky. But beyond just seeing these objects I enjoy learning how <i>it</i> all came to be.
                     </p>
                     <img src="images/temp_moon.jpeg">
                 </span>
@@ -166,28 +169,16 @@
             <div class="mainInterest">
                 <script>
 var i = 0;
-var txt = "I'm a simple person: I like football and most competitive activities, as well as the outdoors, and pondering astronomy conundrums. Other than those I spend my time hanging out with friends and family or just spending my time learning something new. Whether that be a new programming language or an unknown feature in one I know, or learning about a tech gadget like an arduino or raspberry pi, or coding practices that aren't yet under my belt. My main interest in the tech industry is undertermined, however, Mobile Technology, Security, Machine Learning, and the Internet of Things (IoT) are all interesting.";
-var speed = 50;
+var txt = "I'm a simple person: I like football and most competitive activities, as well as the outdoors, and pondering astronomy conundrums. Other than that I do enjoy technology and am astounded by how quick it's been evolving. My main interest in the tech industry is undertermined, however, Mobile Technology, Security, Machine Learning, and the Internet of Things (IoT) are all interesting. ";
+var speed = 47;
 
 function typeWriter() {
   if (i < txt.length) {
     document.getElementById("typeWriter").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
-  }else{
-     txt = "Oh and the quotes at the bottom are from the one and the only Theodor Seuss Geisel. His quotes are great and if not bringing a smile to my face it at least reminds me of the life lessons that they have to offer. Enjoy!"
-      i = 0;
-      document.getElementById("typeWriter").innerHTML += "<br><br>";
-      function typeWriter2(){
-          if (i < txt.length) {
-            document.getElementById("typeWriter").innerHTML += txt.charAt(i);
-            i++;
-            setTimeout(typeWriter2, speed);
-          }
-        }
-      typeWriter2();
-    }
-  } 
+  }
+}
 </script>
                 
             <p id="typeWriter">
