@@ -91,6 +91,7 @@ Interests
     text-align: center;
 }
 
+
 #images img{
     width: 210px;
     height: 340px;
@@ -105,23 +106,25 @@ Interests
     opacity: 1;
 }
 
+#images p{
+    transition: all 1s;
+}
+
 #footballImage{
     position: relative;
     text-align: center;
-    color: white;
     vertical-align: top;
 }
 
 #cabinImage{
     position: relative;
     text-align: center;
-    color: white;
     vertical-align: top;
 }
+
 #moonImage{
      position: relative;
     text-align: center;
-    color: white;
     vertical-align: top;
 }
 
@@ -135,22 +138,35 @@ Interests
     left: 0px;
     font-size: 10pt;
     opacity: 0;
-}
+    box-shadow: .1px .5px 130px white; 
 
-.overlay {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
 }
 
 .mainInterest{
     margin: auto;
-    margin-top: 40px;
+    margin-top: 60px;
     width: 60%;
     color: white;
+    text-align: center;
+}
+
+.interestTitle{
+    color: #ff9f35;
+    letter-spacing: 5px;
+    font-size: 1.3em;
+}
+
+.interestDetail{
+    font-size: 1.04em;
+    color: white;
+}
+
+.removeRealQuick{
+    opacity: .2;
+}
+
+.showRealQuick{
+    opacity: 1;
 }
 
 

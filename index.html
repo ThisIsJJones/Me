@@ -72,7 +72,6 @@
                     </h2>
                     <div class="underscore">_</div>
                     <p>
-                        <!--I'm student at University of Wisconsin - Eau Claire pursuing a degree in Computer Science.-->
                         Hello, welcome.
                         <br>I enjoy programming and everything tech.
                         <br>
@@ -131,36 +130,36 @@
                 <!--<img id="map" src="/Users/jjones/Desktop/Me/images/Hometown.png" width="200" height="200">-->
             </div>
             </div>
-        <div class="slide">
+            <div class="slide">
             <div class="pageBanner" style="position: relative;">
                     Interests
             </div>
             <div id="images">
                 <span id="footballImage">
                     <p class="top-left">
-                        Football
+                        <span class="interestTitle">Football</span>
                         <br>
                         <br>
-                        I grew up playing since 5th grade. It was inevitable of me playing, with my dad and two siblings leaving shoes to fill. Once I grew up to the high school level, I eventually was one of the leading running backs. I was fortunate to get the opportunity to continue my education in college and play college ball. Football will always be a big part of my life as I have learned so many lessons that drive my day to day actions.  
+                        <span class="interestDetail">I grew up playing since 5th grade. It was inevitable of me playing, with my dad and two siblings leaving shoes to fill. Once I grew up to the high school level, I eventually was one of the leading running backs. I was fortunate to get the opportunity to continue my education in college and play college ball. Football will always be a big part of my life as I have learned so many lessons that drive my day to day actions.</span>
                     </p>
                     <img src="images/football.jpg">
                 </span>
                 <span id="cabinImage">
                     <p class="top-left">
-                        Cabin
+                        <span class="interestTitle">Outdoors</span>
                         <br>
                         <br>
-                        Fishing, skiing, eating smores, and hanging out with friends and family are all key elements of being able to escape up north. Given the option I would rather be outdoors whether that be at a cabin or tenting at a National Park. I can't wait to explore more of the outdoors on this beautiful Earth.
+                        <span class="interestDetail">Fishing, skiing, eating smores, and hanging out with friends and family are all key elements of being able to escape up north. Given the option I would rather be outdoors whether that be at a cabin or tenting at a National Park. I can't wait to explore more of the outdoors on this beautiful Earth.</span>
                     </p>
                     <img src="images/temp_cabin.jpg">
                 </span>
                 <span id="moonImage">
                     
                     <p class="top-left">
-                        Astronomy
+                        <span class="interestTitle">Astronomy</span>
                         <br>
                         <br>
-                        A love for the sky. There is something about seeing planets that are millions of miles away and stars that make all sorts of images in the night sky. But beyond just seeing these objects I enjoy learning how <i>it</i> all came to be.
+                        <span class="interestDetail">A love for the sky. There is something about seeing planets that are millions of miles away and stars that make all sorts of images in the night sky. But beyond just seeing these objects I enjoy learning how <i>it</i> all came to be.</span>
                     </p>
                     <img src="images/temp_moon.jpeg">
                 </span>
@@ -169,7 +168,7 @@
             <div class="mainInterest">
                 <script>
 var i = 0;
-var txt = "I'm a simple person: I like football and most competitive activities, as well as the outdoors, and pondering astronomy conundrums. Other than that I do enjoy technology and am astounded by how quick it's been evolving. My main interest in the tech industry is undertermined, however, Mobile Technology, Security, Machine Learning, and the Internet of Things (IoT) are all interesting. ";
+var txt = "I'm a simple person: I like football and most competitive activities, as well as the outdoors, and pondering astronomy conundrums. Other than that I do enjoy technology and am astounded by how quick it's been evolving. My main interest in the tech industry is undertermined, however, Mobile Technology, Security, Machine Learning, and the Internet of Things are all interesting.";
 var speed = 47;
 
 function typeWriter() {
@@ -492,9 +491,7 @@ function typeWriter() {
         <div class="pageBanner">
             Education
         </div>
-        <div id="imageContent">
-             <img id="uwecLogo" src="images/UWEC.png"/>
-        </div>
+        
        <div id="educationContent">
            <div id="courses">
             <br>
@@ -504,6 +501,12 @@ function typeWriter() {
                    <li><span>Graduation</span><span>May 2019</span></li>
                    <li><span>Major</span><span>Computer Science</span></li>
                    <li><span>GPA</span><span>3.4</span></li>
+                   <br>
+                   <br>
+                   <li><div id="imageContent">
+                        <img id="uwecLogo" src="images/UWEC.png"/>
+                        </div>
+                   </li>
                    <br>
                 <p>
                     
@@ -520,7 +523,8 @@ function typeWriter() {
                    <li><span>Computer Architecture</span></li>
                    <li><span>Algorithms</span></li>
                    <li><span>Mobile Development</span></li>
-                   <li><span>Software Engineering</span></li>
+                   <li><span>Software Engineering 1 - 2</span></li>
+                   <li><span>Machine Learning</span></li>
                 </ul>
                <ul id="educationBooks">
                 <h2>Books</h2>
@@ -562,6 +566,38 @@ function typeWriter() {
         'Sometimes the questions are complicated and the answers are simple.',
         "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.",
         "Today was good. Today was fun. Tomorrow is another one."];
+    
+    
+    
+    
+   
+    
+    function addTextOnImage(image){
+        var ele = document.getElementById(image);
+    var buddy = ele.children;
+    var a = 0;
+    for(a = 0; a<buddy.length; a++){
+        if(a != 1){
+            buddy[a].classList.add('showRealQuick');
+        }else{
+            buddy[a].classList.add('removeRealQuick');
+        }
+    }
+    }
+    
+    function removeTextOnImage(image){
+        var ele = document.getElementById(image);
+    var buddy = ele.children;
+    var a = 0;
+    for(a = 0; a<buddy.length; a++){
+        if(a != 1){
+            buddy[a].classList.remove('showRealQuick');
+        }else{
+            buddy[a].classList.remove('removeRealQuick');
+        }
+    }
+    }
+    
 
     var fullpage = new fullpage('#fullpage', {
         //options here
@@ -650,7 +686,15 @@ function typeWriter() {
                     document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-right')
                 }
                 
-                typeWriter();
+                
+                setTimeout(() => {addTextOnImage('footballImage');}, 700);
+                setTimeout(() => {addTextOnImage('cabinImage');}, 1300);
+                setTimeout(() => {addTextOnImage('moonImage');}, 1900);
+
+                setTimeout(() => {removeTextOnImage('footballImage');}, 3000);
+                setTimeout(() => {removeTextOnImage('cabinImage');}, 3200);
+                setTimeout(() => {removeTextOnImage('moonImage'); typeWriter();}, 3400);
+                    
             }else{
                 document.getElementById('fp-nav').classList.remove('fp-right');
                 document.getElementById('fp-nav').classList.add('fp-left');
@@ -660,14 +704,14 @@ function typeWriter() {
                     document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-right')
                     document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-left')
                 }
-                
-                
             }
-            
-            
         }
     });
 </script>
+ 
+    
+    
+    
 </body>
 
 </html>
