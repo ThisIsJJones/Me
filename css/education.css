@@ -10,7 +10,7 @@
 }   
 
 .animateUwecLogo{
-    animation: rotateImage 3s 1s;
+    animation: rotateImage 3s 4s;
 }
 
 @keyframes rotateImage{
@@ -22,7 +22,7 @@
 
 #educationContent{
     position: relative;
-    top: 20px;
+    top: 100px;
     margin-left: 50px;
     height: 100%;
     text-align: center;
