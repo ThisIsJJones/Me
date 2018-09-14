@@ -226,13 +226,13 @@
 }
 
 @keyframes removeBar{
-    0%{height: 107px;}
+    0%{height: 127px;}
     100%{height: 0;}
 }
 
 @keyframes addBar{
     0%{height: 0px;}
-    100%{height: 107px;}
+    100%{height: 127px;}
 }
 
 .fp-right:hover ul{

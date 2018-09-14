@@ -14,13 +14,22 @@
     <link rel="stylesheet" type="text/css" href="css/abilities.css">
     <link rel="stylesheet" type="text/css" href="css/experience.css">
     <link rel="stylesheet" type="text/css" href="css/education.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
     
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
+    
 <div id="fullpage" class="hero">
+<!--
+    <?php include './php/email.php';
+    echo "I have a $color $car.";
+    ?>
+    
+    <?php echo "hello"; ?>
+-->
     <div class="section" id="profileBackground">
         <div  id="stars"></div>
         <div id="sway">
@@ -445,9 +454,9 @@ function typeWriter() {
         <div id="jobs">
             <div id=menardsExperience>
             <span class="jobTitle">
-             <strong>Menards Inc.</strong>
+                <strong>Menards Inc.</strong>
                 <br>
-            <p>May 2017 - Current</p>
+                <p>May 2017 - Present</p>
             </span>
             <span class="jobDesc">
                 <strong>Point of Sale - Intern</strong><br>
@@ -475,9 +484,9 @@ function typeWriter() {
             </div>
             <div id=michaelExperience>
             <span class="jobTitle">
-             <strong>Michael Angelo's</strong>
+                <strong>Michael Angelo's</strong>
                 <br>
-            <p>Summer '16</p>
+                <p>Summer '16</p>
             </span>
             <span class="jobDesc">
                 <strong>Summer Intern</strong>
@@ -544,6 +553,28 @@ function typeWriter() {
         </div>
        
     </div>
+     <div class="section" style=" background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
+         <div class="pageBanner">
+            Contact
+        </div>
+         <div id="sendMessageForm">
+             <form method="post" action="./php/email.php">
+                 <div>Name</div>
+                 <input class="inputByUser" id="formName" type="text" name="senderName" autocomplete="off"/>
+                 <div>Email</div>
+                 <input class="inputByUser" id="formEmail" type="email" name="senderEmail" autocomplete="off"/>
+                 <div>Message</div>
+                 <textarea class="inputByUser" id="formMessage" name="senderMessage" autocomplete="off"></textarea>
+                 <input class="sendButton" type="submit" value="Send"/>
+             </form>
+         </div>
+         <div id="thankyou">
+            <p id="thankyouMessage">
+                Thank you for taking the time to review a little about who I am and the abilities I possess. Fill out the form to contact me and I will get back to you as soon as possible.
+             </p>
+         </div>
+         
+    </div>
 
 </div>
 <div class="gradient" id="quoteContainer">
@@ -598,15 +629,35 @@ function typeWriter() {
     }
     }
     
+    document.getElementById("formName").classList.add("applyBoxShadow")
+    document.getElementById("formName").addEventListener("click", () => {
+        document.getElementById("formName").classList.add("applyBoxShadow")
+        document.getElementById("formEmail").classList.remove("applyBoxShadow")
+        document.getElementById("formMessage").classList.remove("applyBoxShadow")
+    })
+    
+    document.getElementById("formEmail").addEventListener("click", () => {
+        document.getElementById("formName").classList.remove("applyBoxShadow")
+        document.getElementById("formEmail").classList.add("applyBoxShadow")
+        document.getElementById("formMessage").classList.remove("applyBoxShadow")
+    })
+    
+    document.getElementById("formMessage").addEventListener("click", () => {
+        document.getElementById("formName").classList.remove("applyBoxShadow")
+        document.getElementById("formEmail").classList.remove("applyBoxShadow")
+        document.getElementById("formMessage").classList.add("applyBoxShadow")
+    })
+    
+    
 
     var fullpage = new fullpage('#fullpage', {
         //options here
          autoScrolling:true,
         // scrollHorizontally: true
-        anchors: ['page0', 'Me', 'page2', 'page3', 'page4'],
+        anchors: ['page0', 'Me', 'page2', 'page3', 'page4', 'page5'],
 	   verticalCentered: false,
         navigation: true,
-        navigationTooltips: ['Home', 'Me', 'Abilities', 'Experience', 'Education'],
+        navigationTooltips: ['Home', 'Me', 'Abilities', 'Experience', 'Education', 'Contact'],
         navigationPosition: 'left',
         slidesNavigation: false,
         loopHorizontal: false,
@@ -616,6 +667,11 @@ function typeWriter() {
                 document.getElementById("fp-nav").classList.remove('removeNavBar');
                 document.getElementById("fp-nav").classList.remove('addNavBar');
                 document.getElementById("fp-nav").classList.add('removeNavBar');
+            }else if(destination.index==5){
+                document.getElementById("formName").focus();
+                document.getElementById("formName").classList.add("applyBoxShadow")
+                document.getElementById("formEmail").classList.remove("applyBoxShadow")
+                document.getElementById("formMessage").classList.remove("applyBoxShadow")
             }
         },
         onLeave: function(origin, destination, direction){
@@ -707,7 +763,7 @@ function typeWriter() {
                     children[index].style.setProperty('animation-delay', counter+'s');
                     counter += .1;
                 }
-                
+
             }
         },
         onSlideLeave: function(section, origin, destination, direction){
@@ -742,6 +798,8 @@ function typeWriter() {
             }
         }
     });
+    
+    
 </script>
  
     

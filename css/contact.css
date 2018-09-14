@@ -1,0 +1,66 @@
+form textarea{
+    resize: none;
+}
+
+form div{
+    padding-bottom: 9px;
+    color: #ff9f35;
+    font-size: 1.3em;
+}
+
+form .inputByUser {
+    padding: 10px;
+    outline: none;
+    background: grey;
+    border: none;
+    opacity: .9;
+    margin-bottom: 30px;
+    color: white;
+    width: 300px;
+    border-radius: 15px;
+    border: black 1px solid;
+    font-size: 1.1em;
+}
+
+form #formMessage{
+    border-radius: 0px;
+}
+
+form .sendButton{
+    float: right;   
+    border-radius: 15px;
+    color: white;
+    font-size: 1.1em;
+    width: 70px;
+    height: 30px;
+    background-color: #ff9f35;
+}
+
+form #formMessage{
+    height: 140px;
+}
+
+.applyBoxShadow{
+     box-shadow: .1px 10px 100px white; 
+}
+
+#sendMessageForm{
+    width: 300px;
+    margin-left: 20%;
+    margin-top: 100px;
+    display: inline-block;
+    margin-right: 100px;
+}
+
+#thankyou{
+    position: relative;
+    display: inline-block;
+    width: 500px;
+    margin-top: 130px;
+    color: white;
+    vertical-align: top;
+}
+
+#thankyouMessage{
+    font-size: 1.4em;
+}
