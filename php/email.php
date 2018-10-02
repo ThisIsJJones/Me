@@ -11,6 +11,8 @@
     $headers = "From: $visitor_email \r\n"; 
     
         
-    mail($email_to,$email_subject,$email_body,$headers)
+    $success = mail($email_to,$email_subject,$email_body,$headers)
+    
+    header("location:../index.php")
 
 ?>
