@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -23,13 +25,9 @@
 
     
 <div id="fullpage" class="hero">
-<!--
     <?php include './php/email.php';
-    echo "I have a $color $car.";
+    echo "I have a";
     ?>
--->
-    
-   
     <div class="section" id="profileBackground">
         <div  id="stars"></div>
         <div id="sway">
@@ -72,9 +70,6 @@
         <div class="slide">
            <div class="pageBanner">
                     Me
-               <span>
-                    <a style="float: right;" href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank"> <img src="/images/linkdin.png" width="20" height="20"></a>
-                </span>
             </div>
             <div id="profileContent">
                 
@@ -85,10 +80,8 @@
                     <div class="underscore">_</div>
                     <p>
                         Hello, welcome.
-                        <br>I enjoy fully understanding a problem which allows me to program efficient and elegent coding solutions.
-                        As every problem varies I recognize the limitations in my knowledge and take that as a opportunity to fill the gap.
-                        Always learning.
-                        I'm capable of working on both individual and team-oriented projects. Being able to bounce ideas off one another is key to building robust systems.
+                        <br>I enjoy fully understanding a problem. It allows me to code efficient and elegent program solutions.
+                        As every problem varies I recognize the limitations in my knowledge and take that as a opportunity to fill the gap. <i>Always</i> learning. I'm capable of working on both individual and team-oriented projects. Being able to bounce ideas off one another is key to building robust systems. Navigate to the right to read more about myself personably or scroll down to learn about my abilities. 
                     </p>
                 </div>
                 <img id="profilePicture" src="images/Me.jpg">
@@ -127,17 +120,6 @@
                     }
                     document.getElementById('myAge').innerHTML = calculate_age(new Date(1997, 02, 20));
                 </script>
-                <!--<br>-->
-                <!--<span>-->
-                    <!--<a style="float: left" href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank"> <img src="/Users/jjones/Desktop/Me/images/In-2CRev-128px-TM.png" width="20" height="20"></a>-->
-                    <!--<a style="float: right" href="https://github.com/ThisIsJJones" target="_blank"> <img src="/Users/jjones/Desktop/Me/images/GitHub-Mark-Light-120px-plus.png" width="20" height="20"></a>-->
-                <!--</span>-->
-                <!--<br>-->
-                <!--<br>-->
-                <!--<hr style="border: 2px groove beige">-->
-
-                <!--<p>Born and raised: Pewaukee, Wisconsin</p>-->
-                <!--<img id="map" src="/Users/jjones/Desktop/Me/images/Hometown.png" width="200" height="200">-->
             </div>
             </div>
             <div class="slide">
@@ -176,21 +158,8 @@
                 
             </div>
             <div class="mainInterest">
-                <script>
-var i = 0;
-var txt = "I'm a simple person: I like football and most competitive activities, as well as the outdoors, and pondering astronomy conundrums. Other than that I do enjoy technology and am astounded by how quick it's been evolving. My main interest in the tech industry is undertermined, however, Mobile Technology, Security, Machine Learning, and the Internet of Things are all interesting.";
-var speed = 47;
-
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("typeWriter").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-</script>
-                
             <p id="typeWriter">
+                I'm a straightforward person: I enjoy sports and most competitive activities, as well as the outdoors, and pondering astronomy conundrums. Other than that I do enjoy technology and am astounded by how quick it's been evolving. My main interest in the tech industry is undertermined, however I have a few candidates, Mobile Technology, Security, Machine Learning, and the Internet of Things.
             </p>
             </div>
         </div>
@@ -198,9 +167,7 @@ function typeWriter() {
     <div class="section" style=" background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 90%);">
         <div class="pageBanner">
                     Abilities
-            <a style="float: right" href="https://github.com/ThisIsJJones" target="_blank"> <img src="images/GitHub.png" width="20" height="20"></a>
-            </div>
-        
+        </div>
         <div>
             <span class="abilityContent">
                 <ul id="ability-1">
@@ -535,7 +502,7 @@ function typeWriter() {
                 </p>
                 </ul>
                <ul id="educationCourses">
-                <h2>Courses</h2>
+                <h2>CS Courses</h2>
                 <hr align="right">
                    <li><span>Intro Object Oriented Programming</span></li>
                    <li><span>Advanced Programming and Data Structures</span></li>
@@ -580,10 +547,14 @@ function typeWriter() {
          </div>
          <div id="thankyou">
             <p id="thankyouMessage">
-                Thank you for taking the time to review a little about who I am and the abilities I possess. Fill out the form to contact me and I will get back to you as soon as possible.
+                Thank you for taking the time to review a little about who I am and the abilities I possess. If you want further information feel free to view my <a href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank">linkedIn  <img src="/images/linkdin.png" width="20" height="20"></a> and/or my <a href="https://github.com/ThisIsJJones" target="_blank"> github  <img src="images/GitHub.png" width="20" height="20"></a>. Fill out the form to contact me and I will get back to you as soon as possible. 
              </p>
+             <p style="font-family: Brush Script MT; font-size: 32pt; float: right; margin-top:15%">Jordan Jones</p>
          </div>
          
+         <div>
+         
+         </div>
     </div>
 
 </div>
@@ -603,15 +574,16 @@ function typeWriter() {
 <script src="js/index.js"></script>
 
 <script>
-    var quotes = ["Unless someone like you cares a whole awful lot, nothing is going to get better. It's not.",
-        'Today you are you! That is truer than true! There is no one alive who is you-er than you!',
-        "A person's a person, no matter how small.",
-        "The more that you read, the more things you will know. The more that you learn, the more places you'll go.",
-        "How did it get so late so soon? It's night before it's afternoon. December is here before it's June. My goodness how the time has flewn. How did it get so late so soon?",
-        "You know you're in love when you can't fall asleep because reality is finally better than your dreams.",
-        'Sometimes the questions are complicated and the answers are simple.',
-        "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose.",
-        "Today was good. Today was fun. Tomorrow is another one."];
+    var quotes = ["Unless someone like you cares a whole awful lot, nothing is going to get better. It's not. - Dr. Suess",
+        'Today you are you! That is truer than true! There is no one alive who is you-er than you! - Dr. Suess',
+        "A person's a person, no matter how small. - Dr. Suess",
+        "The more that you read, the more things you will know. The more that you learn, the more places you'll go. - Dr. Suess",
+        "How did it get so late so soon? It's night before it's afternoon. December is here before it's June. My goodness how the time has flewn. How did it get so late so soon? - Dr. Suess",
+        "You know you're in love when you can't fall asleep because reality is finally better than your dreams. - Dr. Suess",
+        'Sometimes the questions are complicated and the answers are simple. - Dr. Suess',
+        "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. - Dr. Suess",
+        "Today was good. Today was fun. Tomorrow is another one. - Dr. Suess",
+        "If you can't explain it simply, you don't understand it well enough. - Albert Einstein"];
     
     function addTextOnImage(image){
         var ele = document.getElementById(image);
@@ -687,7 +659,7 @@ function typeWriter() {
         onLeave: function(origin, destination, direction){
             if(destination.index != 0){
 		      document.getElementById("quoteContainer").style="display: block;"
-            document.getElementById("quoteContent").innerHTML = "\"" + quotes[Math.floor((Math.random()*quotes.length))] + "\" - Dr. Suess";
+            document.getElementById("quoteContent").innerHTML = "\"" + quotes[Math.floor((Math.random()*quotes.length))];
                 document.getElementById("fp-nav").classList.remove('removeNavBar');
                 document.getElementById("fp-nav").classList.remove('addNavBar');
              document.getElementById("fp-nav").classList.add('addNavBar');
