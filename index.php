@@ -527,13 +527,7 @@
     </div>
      <div class="section" style=" background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
          <div class="pageBanner">
-            Contact 
-             <?php 
-             echo "hello" 
-             include "./php/email.php"
-             
-             ?>
-             
+            Contact <?php echo"tttt";?>
         </div>
           
          <div id="sendMessageForm">
