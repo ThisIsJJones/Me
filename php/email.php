@@ -1,10 +1,10 @@
 
 <?php
 
-error_reporting(-1);
-ini_set('display_errors', 'On');
-set_error_handler("var_dump");
-phpinfo();
+//error_reporting(-1);
+//ini_set('display_errors', 'On');
+//set_error_handler("var_dump");
+
     $name = $_POST['senderName'];
     $visitor_email = $_POST['senderEmail'];
     $message = $_POST['senderMessage'];
@@ -20,16 +20,6 @@ phpinfo();
         );
     $headers = implode("\r\n", $headers);
     
-        
-
-   
-    if ($_POST['submit']) {
-        if ( mail($email_to, $email_subject, $email_body, $headers)) { 
-            echo '<p>Your message has been sent!</p>';
-        } else { 
-            echo '<p>Something went wrong, go back and try again!</p>'; 
-        }
-    }
-//    header("location:../index.php");
+    header("location:../index.php");
 
 ?>
