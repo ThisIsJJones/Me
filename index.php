@@ -530,6 +530,8 @@
             Contact 
              <?php 
              echo "hello" 
+             include "./php/email.php"
+             
              ?>
              
         </div>
