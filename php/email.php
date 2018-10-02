@@ -4,22 +4,14 @@
 error_reporting(-1);
 ini_set('display_errors', 'On');
 set_error_handler("var_dump");
-
+php phpinfo();
     $name = $_POST['senderName'];
     $visitor_email = $_POST['senderEmail'];
     $message = $_POST['senderMessage'];
     
-    echo $name;
-    echo $visitor_email;
-    echo $message;
-
     $email_to = '21jrjones21@gmail.com'; 
     $email_subject = "Message from website";
-    $email_body = "You have received a new message from $name.\n Here is the message:\n $message .";
-        
-    echo $email_to;
-    echo $email_subject;
-    echo $email_body;
+    $email_body = "You have received a new message from $name. Here is the message: $message.";
 
     $headers = array("From: $visitor_email",
         "Reply-To: $visitor_email",
