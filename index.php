@@ -25,9 +25,6 @@
 
     
 <div id="fullpage" class="hero">
-    <?php include './php/email.php';
-    echo "I have a";
-    ?>
     <div class="section" id="profileBackground">
         <div  id="stars"></div>
         <div id="sway">
@@ -530,7 +527,10 @@
     </div>
      <div class="section" style=" background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
          <div class="pageBanner">
-            Contact <?php echo "hello" ?>
+            Contact 
+             <?php 
+             echo "hello" 
+             ?>
              
         </div>
           
