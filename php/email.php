@@ -24,7 +24,7 @@ phpinfo();
 
    
     if ($_POST['submit']) {
-        if ( mail($email_to, $email_subject, $email_body)) { 
+        if ( mail($email_to, $email_subject, $email_body, $headers)) { 
             echo '<p>Your message has been sent!</p>';
         } else { 
             echo '<p>Something went wrong, go back and try again!</p>'; 
