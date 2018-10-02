@@ -21,9 +21,9 @@ set_error_handler("var_dump");
     $headers = implode("\r\n", $headers);
     
         
-    mail($email_to, $email_subject, $email_body, $headers);
+   
     if ($_POST['submit']) {
-        if (mail ($to, $subject, $body, $from)) { 
+        if ( mail($email_to, $email_subject, $email_body, $headers)) { 
             echo '<p>Your message has been sent!</p>';
         } else { 
             echo '<p>Something went wrong, go back and try again!</p>'; 
