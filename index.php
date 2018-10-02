@@ -527,7 +527,7 @@
     </div>
      <div class="section" style=" background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
          <div class="pageBanner">
-            Contact <?php echo"tttt";?>
+            Contact
         </div>
           
          <div id="sendMessageForm">
@@ -538,7 +538,7 @@
                  <input class="inputByUser" id="formEmail" type="email" name="senderEmail" autocomplete="off"/>
                  <div>Message</div>
                  <textarea class="inputByUser" id="formMessage" name="senderMessage" autocomplete="off"></textarea>
-                 <input class="sendButton" type="submit" value="Send"/>
+                 <input class="sendButton" type="submit" name="submit" value="Send"/>
              </form>
          </div>
          <div id="thankyou">
