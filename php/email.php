@@ -20,7 +20,7 @@
         );
     $headers = implode("\r\n", $headers);
 
-    mail($email_to, $email_subject, $email_body, $headers)
+    mail($email_to, $email_subject, $email_body, $headers);
     header("location:../index.php");
 
 ?>
