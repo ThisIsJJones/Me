@@ -78,7 +78,10 @@
                     <p>
                         Hello, welcome.
                         <br>I enjoy fully understanding a problem. It allows me to code efficient and elegent program solutions.
-                        As every problem varies I recognize the limitations in my knowledge and take that as a opportunity to fill the gap. <i>Always</i> learning. I'm capable of working on both individual and team-oriented projects. Being able to bounce ideas off one another is key to building robust systems. Navigate to the right to read more about myself personably or scroll down to learn about my abilities. 
+                        As every problem varies I recognize the limitations in my knowledge and take that as a opportunity to fill the gap. <i>Always</i> learning. I'm capable of working on both individual and team-oriented projects. Being able to bounce ideas off one another is key to building robust systems. 
+                        <br>
+                        <br>
+                        Navigate to the right to read more about myself or scroll down to learn about my abilities. 
                     </p>
                 </div>
                 <img id="profilePicture" src="images/Me.jpg">
