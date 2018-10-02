@@ -9,10 +9,18 @@ set_error_handler("var_dump");
     $visitor_email = $_POST['senderEmail'];
     $message = $_POST['senderMessage'];
     
+    echo $name;
+    echo $visitor_email;
+    echo $message;
+
     $email_to = '21jrjones21@gmail.com'; 
     $email_subject = "Message from website";
     $email_body = "You have received a new message from $name.\n Here is the message:\n $message .";
         
+    echo $email_to;
+    echo $email_subject;
+    echo $email_body;
+
     $headers = array("From: $visitor_email",
         "Reply-To: $visitor_email",
         "X-Mailer: PHP/" . PHP_VERSION,
@@ -21,6 +29,7 @@ set_error_handler("var_dump");
     $headers = implode("\r\n", $headers);
     
         
+
    
     if ($_POST['submit']) {
         if ( mail($email_to, $email_subject, $email_body)) { 
