@@ -11,7 +11,7 @@
     
     $email_to = '21jrjones21@gmail.com'; 
     $email_subject = "Message from website";
-    $email_body = "You have received a new message from $name. \r\n Here is the message:\r\n\r\ $message.";
+    $email_body = "You have received a new message from $name. \r\n Here is the message:\r\n\r $message.";
 
     $headers = array("From: $visitor_email",
         "Reply-To: $visitor_email"
@@ -19,6 +19,7 @@
     $headers = implode("\r\n", $headers);
 
     mail($email_to, $email_subject, $email_body, $headers);
-    header("location:../index.php");
+    header("location:../index.html");
     exit();
+   
 ?>
