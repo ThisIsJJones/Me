@@ -77,7 +77,7 @@
                     <div class="underscore">_</div>
                     <p>
                         Hello, welcome.
-                        <br>I enjoy fully understanding a problem. It allows me to code efficient and elegent program solutions.
+                        <br>I enjoy fully understanding a problem, it allows me to code efficient and elegent program solutions.
                         As every problem varies I recognize the limitations in my knowledge and take that as a opportunity to fill the gap. <i>Always</i> learning. I'm capable of working on both individual and team-oriented projects. Being able to bounce ideas off one another is key to building robust systems. 
                         <br>
                         <br>
@@ -425,6 +425,7 @@
         <div class="pageBanner">
              Experience
         </div>
+        <div id="newsBanner" class="corner-ribbon top-right sticky blue">Research Coming soon</div>
         
         <div id="jobs">
             <div id=menardsExperience>
@@ -709,7 +710,14 @@
                     children[index].style.setProperty('animation-delay', counter+'s');
                     counter += .1;
                 }
-                
+                var banner = document.getElementById('newsBanner')
+//                banner.style.visibility = "hidden";
+                banner.classList.remove("addBanner")
+                banner.classList.add("closeBanner");
+            }else if(destination.index == 3){
+                var banner = document.getElementById('newsBanner')
+                banner.classList.remove("closeBanner")
+                banner.classList.add("addBanner");
             }else if(destination.index == 4){
                 //animate education page
                 document.getElementById('uwecLogo').classList.add('animateUwecLogo');
