@@ -375,7 +375,16 @@
                         <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
-                
+                <li>
+                    <span>Git</span>
+                    <span class="abilityStat">
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star "></span>
+                        <span class="glyphicon glyphicon-star-empty"></span>
+                    </span>
+                </li>
                 <li>
                     <span>MVC Pattern</span>
                     <span class="abilityStat">
@@ -421,14 +430,16 @@
             </span>
         </div>
     </div>
+    
     <div class="section" style=" background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
         <div class="pageBanner">
              Experience
         </div>
         <div id="newsBanner" class="corner-ribbon top-right sticky blue">Research Coming soon</div>
-        
+         
         <div id="jobs">
             <div id=menardsExperience>
+                
             <span class="jobTitle">
                 <strong>Menards Inc.</strong>
                 <br>
@@ -711,13 +722,12 @@
                     children[index].style.setProperty('animation-delay', counter+'s');
                     counter += .1;
                 }
-                var banner = document.getElementById('newsBanner')
-//                banner.style.visibility = "hidden";
-                banner.classList.remove("addBanner")
+                var banner = document.getElementById('newsBanner');
+                banner.classList.remove("addBanner");
                 banner.classList.add("closeBanner");
             }else if(destination.index == 3){
-                var banner = document.getElementById('newsBanner')
-                banner.classList.remove("closeBanner")
+                var banner = document.getElementById('newsBanner');
+                banner.classList.remove("closeBanner");
                 banner.classList.add("addBanner");
             }else if(destination.index == 4){
                 //animate education page
