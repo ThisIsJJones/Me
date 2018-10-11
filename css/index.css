@@ -41,7 +41,7 @@
   font-family: 'lato',sans-serif;
   font-weight: 300;
   font-size: 50px;
-  letter-spacing: 3px;
+  letter-spacing: 14px;
   user-select: none;
   margin-top: -60px;
   padding-left: 10px;
@@ -82,44 +82,11 @@
     transform: translateX(20px); }
   100% {
     transform: translateX(0px); } }
+
 .letterLift {
   text-transform: uppercase;
   position: relative;
   animation: lift .3s linear; }
-  .letterLift-s {
-    animation-delay: 3150ms; }
-  .letterLift-o1 {
-    animation-delay: 3250ms; }
-  .letterLift-f {
-    animation-delay: 3350ms; }
-  .letterLift-t {
-    animation-delay: 3450ms; }
-  .letterLift-w {
-    animation-delay: 3550ms; }
-  .letterLift-a {
-    animation-delay: 3650ms; }
-  .letterLift-r1 {
-    animation-delay: 3750ms; }
-  .letterLift-e1 {
-    animation-delay: 3850ms; }
-  .letterLift-d {
-    animation-delay: 3950ms; }
-  .letterLift-e2 {
-    animation-delay: 4050ms; }
-  .letterLift-v {
-    animation-delay: 4150ms; }
-  .letterLift-e3 {
-    animation-delay: 4250ms; }
-  .letterLift-l {
-    animation-delay: 4350ms; }
-  .letterLift-o2 {
-    animation-delay: 4450ms; }
-  .letterLift-p {
-    animation-delay: 4550ms; }
-  .letterLift-e4 {
-    animation-delay: 4650ms; }
-  .letterLift-r2 {
-    animation-delay: 4750ms; }
 
 .letterLift:hover {
   top: -3px; }
@@ -138,16 +105,17 @@
   width: 3px;
   height: 3px;
   background-color: white;
-  animation: coastRight 1.95s linear 3150ms;
+  margin-top: 12.8px;
+  animation: coastRight 2.2s linear 3150ms;
   animation-fill-mode: forwards; }
 
 @keyframes coastRight {
   from {
     opacity: 1;
-    transform: translateX(-370px); }
+    transform: translateX(-500px); }
   to {
     opacity: 1;
-    transform: translate(0px); } }
+    transform: translate(-30px); } }
 
 #options {
   position: relative;
