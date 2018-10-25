@@ -384,7 +384,7 @@
                         <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
-                    <li>
+                <li>
                     <span>Linux</span>
                     <span class="abilityStat">
                         <span class="glyphicon glyphicon-star "></span>
@@ -394,7 +394,7 @@
                         <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
-                    <li>
+                <li>
                     <span>GoF Design Patterns</span>
                     <span class="abilityStat">
                         <span class="glyphicon glyphicon-star "></span>
@@ -630,8 +630,8 @@
 
     var fullpage = new fullpage('#fullpage', {
         //options here
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
          autoScrolling:true,
-        // scrollHorizontally: true
         lockAnchors: false,
         anchors: ['home', 'me', 'abilities', 'experience', 'education', 'contact'],
 	   verticalCentered: false,
@@ -640,7 +640,6 @@
         navigationPosition: 'left',
         slidesNavigation: false,
         loopHorizontal: false,
-        parallaxOptions: {type: 'reveal', percentage: 100, property: 'background'},
         afterLoad: function(origin, destination, direction){
             if(destination.index==0){
                 document.getElementById("fp-nav").classList.remove('removeNavBar');
