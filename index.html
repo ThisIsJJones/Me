@@ -710,7 +710,16 @@
             }
         },
         onLeave: function(origin, destination, direction){
+            if(origin.index == 0){
+                document.getElementById("stars").classList.remove("animateStarY-1");
+                document.getElementById("stars2").classList.remove("animateStarY-2");
+                document.getElementById("stars3").classList.remove("animateStarY-3");
+            }
+            
             if(destination.index == 0){
+                document.getElementById("stars").classList.add("animateStarY-1");
+                document.getElementById("stars2").classList.add("animateStarY-2");
+                document.getElementById("stars3").classList.add("animateStarY-3");
                 document.getElementById("quoteContainer").style = "display: none;";
                 removeNavigation();
             }else{
