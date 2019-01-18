@@ -16,7 +16,7 @@ form .inputByUser {
     opacity: .9;
     margin-bottom: 30px;
     color: white;
-    width: 300px;
+    width: 100%;
     border-radius: 15px;
     border: black 1px solid;
     font-size: 1.1em;
@@ -46,9 +46,11 @@ form #formMessage{
 }
 
 #sendMessageForm{
-    width: 300px;
-    margin-left: 20%;
-    margin-top: 100px;
+    width: 27%;
+    height: 72%;
+    height: 72%;
+    margin-left: 12%;
+    margin-top: 7%;
     display: inline-block;
     margin-right: 10%;
 }

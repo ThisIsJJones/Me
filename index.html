@@ -26,11 +26,11 @@
     
 <div id="fullpage" class="hero">
     <div class="section" id="profileBackground">
-        <div  id="stars"></div>
+        <div  class="animateStarY-1" id="stars"></div>
         <div id="sway">
-            <div id="stars2"></div>
+            <div class="animateStarY-2" id="stars2"></div>
         </div>
-        <div id="stars3"></div>
+        <div class="animateStarY-3" id="stars3"></div>
 
         <div id="content" >
             <div class="gradient" id="title">
@@ -45,53 +45,86 @@
             </div>
     </div>
     <div class="section" style="background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Hello and Welcome!</h3>
+                <hr style="border-top: 1px solid black">
+                <p>In need of a front end developer? How about someone to connect your web application to a back end? Well, here you'll find personal traits I possess, experiences I've encountered, and skills I have gathered over the years that make myself versatile in many facets. Regardless the task, frontend, backend, or even just some good ol' C, you can guarantee that I will diligently approach every step.</p>
+                <hr style="border-top: 1px solid black">
+                <p style="color:white; cursor:pointer"> Click anywhere to begin. </p>
+            </div>
+        </div>
+        
+        
         <div class="slide">
            <div class="pageBanner">
                     Me
             </div>
+            
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+            
             <div id="profileContent">
-                
+               
                 <div id="leftContent">
+                    
                     <h2>
                        Hello Welcome
                     </h2>
                     <div class="underscore">_</div>
-                    <p>
-                        Building robust systems to solve everyday problems is what I do best. I enjoy fully understanding a problem as it allows me to code efficient and elegant software solutions. As every problem varies, I recognize the limitations in my knowledge and take that as a opportunity to fill the gap. <i>Always</i> learning. I'm capable and have proven that I can work on both individual and team-oriented projects. Being able to bounce ideas off one another is key to building robust systems. 
-                        <br>
-                        <br>
-                        Navigate to the right to read more about myself or scroll down to learn about my abilities. 
-                    </p>
-                </div>
-                <img id="profilePicture" src="images/Me.jpg">
+                    
+                    <div id="leftDiv">
+                        
+                        <ul style="list-style-type:none;display:block;text-align:left;">
+                            <li>Clear and concise <br> communication <span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
+                            <br>
+                            <li>Doing what I love <span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
+                            <br>
+                            <li>Relentless work ethic <span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
+                            <br>
+                            <li>Attentive listening <span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
+                            <br>
+                            <li>Ping pong Pro <span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
+                        </ul>
+                    
+                    </div>
+                    
+                </div> 
+                
+                  <img class=”element” id="profilePicture" src="images/Me.jpg">
+                
                 <div id="rightContent">
                     <h2>
-                        Details
+                        Jordan Jones
                     </h2>
                     <div class="underscore">_</div>
                     <p>
-                        <strong>Name:</strong>
-                        <br>
-                        <span>Jordan Jones</span>
-                        <br>
-                        <strong>Age:</strong>
-                        <br>
-                        <span id="myAge"></span>
-                        <br>
+                         <br class="brSize">
                         <strong>Email:</strong>
                         <br>
                         <span>21jrjones21@gmail.com</span>
-                        <br>
+                        <br class="brSize">
                         <strong>Hometown:</strong>
                         <br>
                         <span>Pewaukee, WI</span>
+                        <br class="brSize">
+                        <strong>Willing to relocate?</strong>
                         <br>
-                        <strong>Willing to relocate:</strong>
-                        <br>
-                        <span>Definitely</span>
+                        <span>Definitely.
+                            <br>
+                            <span style="font-size:.7em;">Wisconsin, Minnesota, or Colorado</span>
+                        </span>
+                        <br class="brSize">
+                        
                     </p>
                 </div>
+<!--
                 <script>
+                    
                     function calculate_age(dob) { 
                         var diff_ms = Date.now() - dob.getTime();
                         var age_dt = new Date(diff_ms); 
@@ -99,19 +132,24 @@
                     }
                     document.getElementById('myAge').innerHTML = calculate_age(new Date(1997, 02, 20));
                 </script>
+-->
             </div>
             </div>
             <div class="slide">
             <div class="pageBanner" style="position: relative;">
                     Interests
             </div>
+            <div id="stars"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+                
             <div id="images">
                 <span id="footballImage">
                     <p class="top-left">
                         <span class="interestTitle">Football</span>
                         <br>
                         <br>
-                        <span class="interestDetail">I grew up playing since 5th grade. It was inevitable of me playing, with my dad and two siblings leaving shoes to fill. Once I grew up to the high school level, I was voted as team captain. I was fortunate to get the opportunity to continue my education in college and play college ball. Football will always be a big part of my life as I have learned so many lessons that drive my day to day actions.</span>
+                        <span class="interestDetail">With my dad and two siblings leaving shoes to fill, it was inevitable of me playing. As I entered into the high school level I was voted as team captain where I was a leader on and off the field. I was fortunate to get the opportunity to continue my education in college as well as play football. Football will always be a big part of my life as I have learned so many lessons that drive my day to day actions.</span>
                     </p>
                     <img src="images/football.jpg">
                 </span>
@@ -120,7 +158,7 @@
                         <span class="interestTitle">Outdoors</span>
                         <br>
                         <br>
-                        <span class="interestDetail">Fishing, skiing, eating s'mores with friends and family are all key elements of being able to escape to the outdoors. Given the option I would rather be out in nature, whether that be at a cabin or tenting at a National Park. This picture was taken in the Smoky Mountains and I can't wait to explore more of the outdoors on this beautiful Earth.</span>
+                        <span class="interestDetail">Fishing, skiing, hiking, and eating s'mores with friends and family are all key elements of being able to escape to the outdoors. Given the option I would rather be out in nature, whether that be at a cabin or tenting at a National Park. I can't wait to explore more of the outdoors on this beautiful Earth. <br class="brSize"> <span style="font-size: 80%">This picture was taken in the Smoky Mountains</span></span>
                     </p>
                     <img src="images/waterfall.JPG">
                 </span>
@@ -130,7 +168,7 @@
                         <span class="interestTitle">Astronomy</span>
                         <br>
                         <br>
-                        <span class="interestDetail">A love for the sky. There is something about seeing planets that are millions of miles away and stars that make all sorts of images in the night sky. But beyond just seeing these objects I enjoy learning how <i>it</i> all came to be.</span>
+                        <span class="interestDetail">A love for the sky and beyond. There is something about seeing planets that are millions of miles away and stars that make all sorts of images in the night sky. But beyond just seeing these objects I enjoy learning how <i>it</i> all came to be.</span>
                     </p>
                     <img src="images/uwec_moon.jpg">
                 </span>
@@ -138,15 +176,20 @@
             </div>
             <div class="mainInterest">
             <p >
-                I enjoy sports and most competitive activities. As well as exploring the outdoors and always taking the chance to examine the night sky. I've taken the opportunity to explore The Great Smoky Mountains, Zion, and other campsite locations, but not nearly as many as I wish to visit. Other than that, I do enjoy technology and creating all sorts of projects that either solve a problem or are for amusement. My first tech project was a game/puzzle that was self initiated in 8th grade. The project was a 300+ slide show on PowerPoint that utilized mouse movement and internal hyperlinks to create various levels. Throughout the game the player had three lives and would have to restart if they ran out. This game was saved onto flash drives that were distributed to many that wanted to play. After that, it was a done deal, I knew I wanted to continue to work with computers. 
+               My first tech project was a puzzle that was created in a 300+ slide show on PowerPoint. It was self initiated and one of my prouder projects. The game utilized mouse movement and internal hyperlinks to create various levels inside each slide. After releasing the puzzle PowerPoint game on a flash drive to many in my 8th grade class it was a done deal, I knew I wanted to continue to work with computers to make a difference, small or big, in people's lives. 
             </p>
             </div>
         </div>
     </div>
     <div class="section" style=" background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 90%);">
         <div class="pageBanner">
-                    Abilities
+                    Knowledge
         </div>
+        
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        
         <div>
             <span class="abilityContent">
                 <ul id="ability-1">
@@ -198,7 +241,7 @@
                         <span class="glyphicon glyphicon-star "></span>
                         <span class="glyphicon glyphicon-star "></span>
                         <span class="glyphicon glyphicon-star "></span>
-                        <span class="glyphicon glyphicon-star-empty"></span>
+                         <span class="glyphicon glyphicon-star "></span>
                         <span class="glyphicon glyphicon-star-empty"></span>
                     </span>
                 </li>
@@ -414,6 +457,11 @@
         <div class="pageBanner">
              Experience
         </div>
+        
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        
         <div id="newsBanner" class="corner-ribbon top-right sticky blue">Research Coming soon</div>
          
         <div id="jobs">
@@ -472,6 +520,10 @@
             Education
         </div>
         
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        
        <div id="educationContent">
            <div id="courses">
             <br>
@@ -508,7 +560,7 @@
                    <li><span>Operating Systems</span></li>
                 </ul>
                <ul id="educationBooks">
-                <h2>Books</h2>
+                <h2>Books Consumed</h2>
                 <hr align="right">
                    <li><span>Java Network Programming</span></li>
                    <li><span>Code Complete</span></li>
@@ -525,7 +577,7 @@
             Contact
         </div>
           
-         <div id="sendMessageForm">
+         <div id="sendMessageForm" style="border:solid 3px white;padding:20px;" >
              <form method="post" action="./php/email.php">
                  <div>Name</div>
                  <input class="inputByUser" id="formName" type="text" name="senderName" autocomplete="off"/>
@@ -536,14 +588,13 @@
                  <input class="sendButton" type="submit" name="submit" value="Send"/>
              </form>
          </div>
-         <div id="thankyou">
-<!--
-            <p id="thankyouMessage">
-                Thank you for taking the time to review a little about who I am and the abilities I possess. If you wish for further information feel free to view my <a href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank">LinkedIn  <img src="/images/linkdin.png" width="20" height="20"></a> and/or my <a href="https://github.com/ThisIsJJones" target="_blank"> Github  <img src="images/GitHub.png" width="20" height="20"></a>. Send me an email via the form to the left and let's talk.
-             </p>
--->
+         <div id="thankyou" >
              <p id="thankyouMessage">
-                Thank you for taking the time to review a little about who I am and the abilities I possess. If you wish to see some of the code I've written feel free to view my <a href="https://github.com/ThisIsJJones" target="_blank"> Github <img src="images/GitHub.png" width="20" height="20"></a>. Connect with me on <a href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank">LinkedIn  <img src="/images/linkdin.png" width="20" height="20"></a>. Download my <a href="./Resume.pdf" download>Resume <span class="glyphicon glyphicon-file"></span></a>. Send me an email via the form to the left and let's talk.
+                Thank you for taking the time to review a little about who I am and the abilities I possess. For more information download my <a href="./Resume.pdf" download>Resume</a>.  If you wish to see some of the code I've written check out my <a href="https://github.com/ThisIsJJones" target="_blank"> Github <img src="images/GitHub.png" width="20" height="20"></a>. Send me an email via the form to the left and let's talk about a project, thoughts on this website, or any thing at all. 
+                 <br><br>
+                 
+                 
+                 Make sure to connect with me on <a href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank">LinkedIn <img src="/images/linkdin.png" width="20" height="20"></a>. 
              </p>
              <p style="font-family: Brush Script MT; font-size: 32pt; float: right; margin-top:15%">Jordan Jones</p>
          </div>
@@ -570,6 +621,7 @@
 <script src="js/index.js"></script>
 
 <script>
+    modalCloseFunctions();
     createJobTitle();
     var quotes = ["Unless someone like you cares a whole awful lot, nothing is going to get better. It's not. - Dr. Suess",
         'Today you are you! That is truer than true! There is no one alive who is you-er than you! - Dr. Suess',
@@ -580,6 +632,11 @@
         "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. - Dr. Suess",
         "Today was good. Today was fun. Tomorrow is another one. - Dr. Suess",
         "If you can't explain it simply, you don't understand it well enough. - Albert Einstein"];
+    
+    
+    
+    document.getElementById("quoteContent").style.opacity = 0;
+    shouldHide = true;
     
     function addTextOnImage(image){
         var ele = document.getElementById(image);
@@ -627,16 +684,16 @@
     })
     
     
-
+    var onSlideNumber1 = false;
     var fullpage = new fullpage('#fullpage', {
         //options here
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
          autoScrolling:true,
         lockAnchors: false,
-        anchors: ['home', 'me', 'abilities', 'experience', 'education', 'contact'],
+        anchors: ['home', 'me', 'knowledge', 'experience', 'education', 'contact'],
 	   verticalCentered: false,
         navigation: true,
-        navigationTooltips: ['Home', 'Me', 'Abilities', 'Experience', 'Education', 'Contact'],
+        navigationTooltips: ['Home', 'Me', 'Knowledge', 'Experience', 'Education', 'Contact'],
         navigationPosition: 'left',
         slidesNavigation: false,
         loopHorizontal: false,
@@ -653,18 +710,29 @@
             }
         },
         onLeave: function(origin, destination, direction){
-            if(destination.index != 0){
-		      document.getElementById("quoteContainer").style="display: block;"
-            document.getElementById("quoteContent").innerHTML = "\"" + quotes[Math.floor((Math.random()*quotes.length))];
-                document.getElementById("fp-nav").classList.remove('removeNavBar');
-                document.getElementById("fp-nav").classList.remove('addNavBar');
-             document.getElementById("fp-nav").classList.add('addNavBar');
-
-            }else{
+            if(destination.index == 0){
                 document.getElementById("quoteContainer").style = "display: none;";
-                document.getElementById("fp-nav").classList.remove('removeNavBar');
-                document.getElementById("fp-nav").classList.remove('addNavBar');
-                document.getElementById("fp-nav").classList.add('removeNavBar');
+                removeNavigation();
+            }else{
+                document.getElementById("quoteContainer").style="display: block;"
+                
+                if(destination.index == 1){
+                    if(onSlideNumber1){
+                        document.getElementById("quoteContent").innerHTML = quotes[Math.floor((Math.random()*quotes.length))];
+                    }else{
+                        if(shouldHide){
+                            document.getElementById('fp-nav').classList.add("remove");
+                            document.getElementsByClassName("fp-controlArrow")[1].classList.add("remove");
+                            fullpage.setAllowScrolling(false);
+                            shouldHide = false;
+                        }
+
+                        document.getElementById("quoteContent").innerHTML = "Navigate to the right to read about my interests or keep scrolling";
+                    }
+                }else{
+                    document.getElementById("quoteContent").innerHTML = quotes[Math.floor((Math.random()*quotes.length))];
+                }
+                showNavigation();
             }
             
             
@@ -769,8 +837,10 @@
                 setTimeout(() => {removeTextOnImage('footballImage');}, 3000);
                 setTimeout(() => {removeTextOnImage('cabinImage');}, 3200);
                 setTimeout(() => {removeTextOnImage('moonImage');}, 3400);
-                    
+                document.getElementById("quoteContent").innerHTML = quotes[Math.floor((Math.random()*quotes.length))]; 
+                onSlideNumber1 = true;
             }else{
+                onSlideNumber1 = false;
                 document.getElementById('fp-nav').classList.remove('fp-right');
                 document.getElementById('fp-nav').classList.add('fp-left');
                 var sections = document.getElementById('fp-nav').children[0].childNodes.length;
@@ -779,10 +849,12 @@
                     document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-right')
                     document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-left')
                 }
+                document.getElementById("quoteContent").innerHTML = "Navigate to the right to read about my interests or keep scrolling";
             }
         }
     });
     
+
     
 </script>
  

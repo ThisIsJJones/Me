@@ -1,6 +1,7 @@
+
 #profileContent{
     position: relative;
-    top: 20%;
+    top: 12%;
     padding: 20px;
     word-break: break-word;
     text-align: center;
@@ -12,17 +13,33 @@
     }
 }
 
-#leftContent{
+#leftContent, #rightContent{
     text-align: center;
-    padding-right: 60px;
-    width: 450px;
+    padding-right: 35px;
+    width: 39%; 
+}
 
+#leftContent{
+    transform: translateX(-200%);
 }
 
 #rightContent{
-    text-align: left;
-    padding-left: 60px;
-    width: 450px;
+    transform: translateX(200%);
+}
+
+.slide-in {
+    animation: slide-in 1s forwards;
+    animation-delay: .3s;
+    -webkit-animation: slide-in 1s forwards;
+    -webkit-animation-delay: .3s;
+}
+
+@keyframes slide-in {
+    100% { transform: translateX(0%); }
+}
+
+@-webkit-keyframes slide-in {
+    100% { -webkit-transform: translateX(0%); }
 }
 
 #leftContent, #rightContent{
@@ -31,41 +48,63 @@
     vertical-align: top;
 }
 
+
 #leftContent h2, #rightContent h2{
     display: inline;
-    text-align: center;
+    font-size: 2.7em;
     background: -webkit-linear-gradient(green, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-#leftContent p, #rightContent p span{
+#leftContent #leftDiv, #rightContent p {
+/*
     background: -webkit-linear-gradient(white 30%, #38495a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 20px;
+*/
+    color:darkgrey;
+    font-size: 1.5em;
+    margin-top: 10%;
+}
+
+#leftDiv span{
+    color: #2c613c;
+}
+
+
+#leftDiv li{
 }
 
 #leftContent p{
+    display: inline-block;
     font-size: 18px;
-    text-align: left;
+    text-align: center;
 }
 
 #rightContent p strong{
     color: white;
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 #profilePicture{
     position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 250px;
-    height: 250px;
+    width: 0%;
+    height: 0%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: 6px solid green;
+}
+
+.expandPicture{
+     animation: expand 1.6s forwards;
+}
+
+@keyframes expand {
+    100% {width: 18%; height:18%}
 }
 
 #map:hover{
@@ -78,6 +117,52 @@
     display: inline;
     color:#ff9f35;
     font-size: 3em;
+}
+
+.brSize{
+    display: block; /* makes it have a width */
+    content: ""; /* clears default height */
+    margin-top: 4%; /* change this to whatever height you want it */
+}
+
+/* The Modal (background) */
+.modal {
+  display: block; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,.6); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-image: linear-gradient(white 10%, gray 70%, green);
+  text-align: center;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 68%;
+  font-size: 1.2em;
+}
+
+/* The Close Button */
+.close {
+  color: black;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 
@@ -128,8 +213,15 @@ Interests
     vertical-align: top;
 }
 
+.element{
+  shape-outside: circle(50%);
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+
 .top-left {
-     width: 210px;
+    width: 210px;
     height: 340px;
     position: absolute;
     z-index: 10;
@@ -144,8 +236,9 @@ Interests
 
 .mainInterest{
     margin: auto;
-    margin-top: 60px;
+    margin-top: 6%;
     width: 60%;
+    font-size: 105%;
     color: white;
     text-align: center;
 }
@@ -166,7 +259,11 @@ Interests
 }
 
 .showRealQuick{
-    opacity: 1;
+    opacity: 1!important;
+}
+
+.remove{
+    opacity: 0!important;
 }
 
 
