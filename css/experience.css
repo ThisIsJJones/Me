@@ -1,8 +1,10 @@
-#jobs{
-    position: absolute;
-    margin-top: 70px;
-    left: 80px;
-    text-align: left;
+.jobs{
+    position: relative;
+    margin-top: 2%;
+}
+
+.jobs hr{
+    border-top: 1px solid #ff9f35;
 }
 
 #menardsExperience{
@@ -13,9 +15,13 @@
     
 }
 
+.XPHighlight{
+    color: #ff9f35;
+}
+
 @media (max-width: 1300px){    
     .jobDesc ul li{
-        width: 80%;
+        
     }
 }
 
@@ -32,12 +38,13 @@
 }
 
 .jobTitle{
-    float: left;
-    display: inline;
-    height: 100px;
-    width: 190px;
+    font-size: 1.4em;
+    text-align: center;
+    width: 100%;
     color: #ff9f35;
-    text-shadow: .1px .5px 130px white; 
+    background-color: rgba(255,255,255,.1);
+    padding: .1%;
+    text-shadow: .1px .5px 80px white; 
 }
 
 .jobTitle strong{
@@ -52,19 +59,16 @@
 }
 
 .jobDesc{
-    text-align: left;
-    margin-left: 200px;
-    height: 100px;
-    display: inline;
+    margin-left: 7%;
+    margin-right: 7%;
 }
 
 .jobDesc ul{
-    margin-left: 200px;
-    width: 100%;
+    margin-left: 7%;
 }
 
 .jobDesc ul li{
-    padding-left: 4em;
+    padding: 1.5%;
     text-indent: -4em;
 }
 
@@ -85,8 +89,6 @@
 }
 
 .jobDesc strong{
-    float: left;
-    padding-left: 10px;
     color: green;
     letter-spacing: 1.5px;
 }
@@ -148,3 +150,5 @@
     from {opacity: 1;}
     to {opacity: 0;}
 }
+
+

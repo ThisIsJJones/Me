@@ -47,12 +47,15 @@ form #formMessage{
 
 #sendMessageForm{
     width: 27%;
-    height: 72%;
-    height: 72%;
+    height: 75%;
     margin-left: 12%;
     margin-top: 7%;
     display: inline-block;
     margin-right: 10%;
+    color: white;
+    font-size: 1.2em;
+    border:solid 3px white;
+    padding:20px;
 }
 
 #thankyou{

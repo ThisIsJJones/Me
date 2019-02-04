@@ -1,6 +1,6 @@
 function createJobTitle(){
     var title = document.getElementById("myJobTitle");
-    var jobTitle = "Full Stack Developer";
+    var jobTitle = "A Back-End Developer";
     
     var delay = 3050;
     var i; 
@@ -12,6 +12,21 @@ function createJobTitle(){
         letterElement.style.animationDelay = (delay+(i*100))+"ms";
         
         title.appendChild(letterElement);
+    }
+    
+    var title2 = document.getElementById("myJobTitle2");
+    var jobTitle = "with a touch of Front-End";
+    
+    var delay = 3050;
+    var i; 
+    for(i = 0; i < jobTitle.length; i++){
+        var letter = jobTitle.charAt(i);
+        var letterElement = document.createElement("span");
+        letterElement.classList.add("letterLift");
+        letterElement.innerHTML = letter;
+        letterElement.style.animationDelay = (delay+(i*100))+"ms";
+        
+        title2.appendChild(letterElement);
     }
 }
 
