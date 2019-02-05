@@ -19,12 +19,16 @@
 //
 //    $headers = implode("\r\n", $headers);
 
-    $headers = "From: $visitor_email" . "\r\n";
+    $headers   = array();
+    $headers[] = "MIME-Version: 1.0";
+    $headers[] = "Content-type: text/plain; charset=utf-8";
+    $headers[] = "From: noreply@MYSERVER.de";
+    $headers[] = "X-Mailer: PHP/".phpversion();
 
     // use wordwrap() if lines are longer than 70 characters
     $email_body = wordwrap($email_body,70);
 
-    mail($email_to, $email_subject, $email_body, $headers);
+    mail($email_to, $email_subject, $email_body, implode("\r\n",$headers));
     header("location:../index.html");
     exit();
    
