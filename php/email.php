@@ -28,7 +28,7 @@
     // use wordwrap() if lines are longer than 70 characters
     $email_body = wordwrap($email_body,70);
 
-    success = mail($email_to, $email_subject, $email_body, implode("\r\n",$headers));
+    mail($email_to, $email_subject, $email_body, implode("\r\n",$headers));
     header("location:../index.html");
     exit();
    
