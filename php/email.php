@@ -14,8 +14,9 @@
     $email_body = "You have received a new message from: $name. \r\n Here is the message:\r\n\r\n $message. \r\n\r\n";
 
 
-    $myfile = fopen("email.txt", "w");
+    $myfile = fopen("email.txt", "w") or die("Unable to open file!");
     fwrite($myfile, $email_body);
+    fclose($myfile);
 
 
 //    $headers = array("From: $visitor_email",
