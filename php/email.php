@@ -11,6 +11,8 @@
     
     $email_to = '21jrjones21@gmail.com'; 
     $email_subject = "Message from website";
+
+    $message = wordwrap($text, 70, "\n", false); 
     $email_body = "New message: \n    Name:   $name \n    Email:    $visitor_email \n    Message:\n        $message \n\n";
 
 
