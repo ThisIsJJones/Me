@@ -70,13 +70,13 @@
 -->
     <div class="section" style="background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
         <!-- The Modal -->
-        <div id="myModal" class="modal">
+        <div id="myModal" class="modal" >
             <!-- Modal content -->
             <div class="modal-content">
                 <span class="close">&times;</span>
                 <h3>Welcome!</h3>
                 <hr style="border-top: 1px solid black">
-                <p>In need of a Front-End developer? How about someone to connect your web application to a Back-End? Well, here you'll find personal traits I possess, experiences that have shaped me, and skills that make myself versatile in many areas of development. I'm a Back-End developer at Menards in Eau Claire, WI. <span><p style="color:floralwhite;">Let's find the problems and build the solutions.</p></span> </p>
+                <p>In need of a Front-End developer? How about someone to connect your web application to a Back-End? Here you will find personal traits I possess, experiences that have shaped me, and skills that make myself versatile in many areas of development. I'm a Back-End developer at Menards in Eau Claire, WI. <span><p style="color:floralwhite;">Let's find the problems and build the solutions.</p></span> </p>
                 <hr style="border-top: 1px solid black">
                 <p style="color:#ff9f35; cursor:pointer; font-size:.8em;">Want to know more? Click anywhere.</p>
             </div>
@@ -744,7 +744,7 @@
                 document.getElementById("quoteContainer").style="display: block;"
 
                 if(destination.index == 1){
-                    
+                   
                     if(meSlide == 0){
                         document.getElementById('fp-nav').classList.remove('fp-right');
                         document.getElementById('fp-nav').classList.add('fp-left');
@@ -772,6 +772,7 @@
                         document.getElementById("quoteContent").innerHTML = quotes[Math.floor((Math.random()*quotes.length))];
                     }else{
                         if(shouldHide){
+                            document.getElementById("myModal").classList.add("slide-in-modal");
                             document.getElementById('fp-nav').classList.add("remove");
                             document.getElementsByClassName("fp-controlArrow")[1].classList.add("remove");
                             fullpage.setAllowScrolling(false);
