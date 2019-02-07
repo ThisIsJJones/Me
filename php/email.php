@@ -11,10 +11,14 @@
     
     $email_to = '21jrjones21@gmail.com'; 
     $email_subject = "Message from website";
-    $email_body = "You have received a new message from: $name. \r\n Here is the message:\r\n\r\n $message. \r\n\r\n";
+    $email_body = "You have received a new message from: $name \r
+                    with email: $visitor_email. \r\n\r
+                    Here is the message:\r 
+                    
+                    $message. \r\n\r\n";
 
 
-    $myfile = fopen("./email.txt", "w") or die("Unable to open file!");
+    $myfile = fopen("./email.txt", "w");
     fwrite($myfile, $email_body);
     fclose($myfile);
 
