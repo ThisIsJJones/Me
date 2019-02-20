@@ -35,17 +35,17 @@
 }
 
 .slide-out-left {
-    animation: slide-out-left 1s forwards;
+    animation: slide-out-left .8s forwards;
     animation-delay: 0s;
-    -webkit-animation: slide-out-left ease-in 1s forwards;
+    -webkit-animation: slide-out-left ease-in .8s forwards;
     -webkit-animation-delay: 0s;
 }
 
 .slide-in-modal {
     transform: translateX(100%);
-    animation: slide-in 1s forwards;
+    animation: slide-in .7s forwards;
     animation-delay: .7s;
-    -webkit-animation: slide-in ease-out 1s forwards;
+    -webkit-animation: slide-in ease-out .7s forwards;
     -webkit-animation-delay: .7s;
 }
 
