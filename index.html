@@ -46,28 +46,6 @@
             </div>
         </div>
     </div>
-    
-<!--
-    <div class="section" id="profileBackground">
-        <div  class="animateStarY-1" id="stars"></div>
-        <div id="sway">
-            <div class="animateStarY-2" id="stars2"></div>
-        </div>
-        <div class="animateStarY-3" id="stars3"></div>
-
-        <div id="content" >
-            <div class="gradient" id="title">
-                <span style="letter-spacing: 4px">Hello, I'm <span style="-webkit-text-fill-color:forestGreen;">Jordan Jones</span></span>
-                <br>
-                <span id="myJobTitle" class="gradient" style="font-size: 12pt;"></span>
-                <span style="font-size:.3em; letter-spacing:4px; display:block;">with a touch of Front-End</span>
-            </div>
-            <div id="options">
-                <a href="#me"><i class="fa fa-chevron-circle-down" style="font-size: 50px"></i></a>
-            </div>
-        </div>
-    </div>
--->
     <div class="section" style="background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
         <!-- The Modal -->
         <div id="myModal" class="modal" >
@@ -103,7 +81,7 @@
                         <ul style="list-style-type:none;display:block;text-align:left;">
                             <li>Clear and concise communication <span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
                             <br>
-                            <li>Owning any outcome<span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
+                            <li>Owning any outcome, no excuses<span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
                             <br>
                             <li>Relentless work ethic toward the <br> achievement of goals<span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
                             <br>
@@ -139,7 +117,6 @@
                             <span style="font-size:.7em;">Wisconsin, Minnesota, or Colorado</span>
                         </span>
                         <br class="brSize">
-                        
                     </p>
                 </div>
 <!--
@@ -592,7 +569,6 @@
          <div class="pageBanner">
             Contact
         </div>
-          
          <div id="sendMessageForm" >
              <form method="post" action="./php/email.php">
                  <div>Name</div>
@@ -604,15 +580,27 @@
                  <input class="sendButton" type="submit" name="submit" value="Send"/>
              </form>
          </div>
-         <div id="thankyou" >
-             <p id="thankyouMessage">
-                Thank you for taking the time to review a little about who I am and what I can offer to a team. For more information about myself download my <a href="./Resume.pdf" download>Resume</a>.  If you wish to see some of the code I've written check out my <a href="https://github.com/ThisIsJJones" target="_blank"> Github <img src="images/GitHub.png" width="20" height="20"></a>. 
-                You can also reach me on <a href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank">LinkedIn <img src="/images/linkdin.png" width="20" height="20"></a>.
-                <br><br> 
+         <div id="thankyou">
+            <h3 style="color: #ff9f35; text-shadow: 1.5px 1.5px #337ab7; letter-spacing:2px;">Let's Connect</h3>
+            <hr style="border-top: 4px double #337ab7;">
+            <div id="thankyouMessage">
+                Thank you for letting me tell you a little bit about who I am. But now it's time for you to tell me about yourself. 
+                <ul style="">
+                    <h4 style="color:#ff9f35">I'd like to know:</h4>
+                    <li><span>What brought you here?</span></li>
+                    <li><span>Any suggestions about this website?</span></li>
+                    <h4 style="color:#ff9f35">If you represent a company:</h4>
+                    <li><span>What company? Located where?</span></li>
+                    <li><span>What position are you looking to fill?</span></li>
+                </ul>
+                <hr>
                 Send me an email via the form to the left and let's talk.
-                
-             </p>
-             <p style="font-family: Brush Script MT; font-size: 32pt; float: right; margin-top:15%">Jordan Jones</p>
+                <br><br>
+                 For more information about myself download my <a href="./Resume.pdf" download="">Resume</a>.  If you wish to see some of the code I've written check out my <a href="https://github.com/ThisIsJJones" target="_blank"> Github <img src="images/GitHub.png" width="20" height="20"></a>. 
+                You can also reach me on <a href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank">LinkedIn <img src="/images/linkdin.png" width="20" height="20"></a>.
+             </div>
+             <hr style="border-top: 4px double #337ab7;">
+             <p style="color: #337ab7; font-family: Brush Script MT; font-size: 32pt; float: right;">Jordan Jones</p>
          </div>
     </div>
 
@@ -701,6 +689,7 @@
     
     var meSlide = 0;
     var experienceSlide = 0;
+    var firstTimeAtContact = true;
     
     var fullpage = new fullpage('#fullpage', {
         //options here
@@ -891,6 +880,13 @@
                     counter += .1;
                 }
 
+            }else if(destination.index == 5) {
+                if(firstTimeAtContact){
+                    firstTimeAtContact = false;
+                    document.getElementById("thankyou").classList.add("slide-in");
+                    document.getElementById("sendMessageForm").classList.add("slide-in");
+
+                }
             }
         },
         afterSlideLoad: function(section, origin, destination, direction){
