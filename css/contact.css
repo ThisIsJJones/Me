@@ -72,6 +72,7 @@ form #formMessage{
 
 #thankyouMessage{
     font-size: 1.2em;
+    text-align: center;
 }
 
 #thankyouMessage ul li span{
@@ -79,8 +80,8 @@ form #formMessage{
     color: white;
 }
 
-#thankyouMessage ul li {
-    color: #ff9f35;
+#thankyouMessage ul {
+    list-style-type: none;
 }
 
 @keyframes slide-in {
