@@ -106,17 +106,25 @@
     }
 }
 
+@media (max-width: 1070px){
+    .abilityKey{
+        width: 252px!important;
+    }
+}
+
 @media (max-width: 1000px){
     .abilityContent ul li {
         font-size: .8em;
+        width: 80%!important;
     }
     
     .abilityContent ul{
-         height: 150px;
-        width: 100%;
+        height: 150px;
+        width: 80%;
         padding: 0;
         padding-left: 10px;
         padding-right: 10px;
+        margin:0 auto;
         column-count: 2;
         column-gap: normal;
     }
@@ -131,6 +139,11 @@
     .abilityContent hr{
         margin-top: 3px;
         margin-bottom: 3px;
+    }
+    
+    .abilityKey{
+        text-align: left!important;
+        margin: 0 auto;
     }
 }
 
@@ -168,13 +181,20 @@
   -webkit-text-fill-color: transparent;
 }
 
-.abilityContent li{
+.abilityContent li:not(.abilityKey){
     width: 300px;
     padding-top: 4px;
     color: white;
 }
 
-.abilityContent li:hover{
+.abilityKey{
+    width: 280px;
+    padding-top: 4px;
+    color: white;
+    text-align: center;
+}
+
+.abilityContent li:hover:not(.abilityKey){
     font-size: 1.3em;
     background: rgba(255,255,255,.3);
     border-radius: 5px;
