@@ -106,19 +106,17 @@
     }
 }
 
-@media (max-width: 1070px){
-    .abilityKey{
-        width: 252px!important;
-    }
-}
-
 @media (max-width: 1000px){
-    .abilityContent ul li {
+    .abilityContent ul li:not(.abilityKeyItem) {
         font-size: .8em;
-        width: 80%!important;
+        width: 80%;
     }
     
-    .abilityContent ul{
+    .abilityKeyItem{
+        font-size: .8em;
+    }
+    
+    .abilityContent ul:not(.abilityKey){
         height: 150px;
         width: 80%;
         padding: 0;
@@ -128,6 +126,8 @@
         column-count: 2;
         column-gap: normal;
     }
+    
+    
     
     .abilityContent h2{
         width: 100%;
@@ -141,10 +141,6 @@
         margin-bottom: 3px;
     }
     
-    .abilityKey{
-        text-align: left!important;
-        margin: 0 auto;
-    }
 }
 
 .abilityContent hr{
@@ -181,20 +177,20 @@
   -webkit-text-fill-color: transparent;
 }
 
-.abilityContent li:not(.abilityKey){
+.abilityContent li:not(.abilityKeyItem){
     width: 300px;
     padding-top: 4px;
     color: white;
 }
 
-.abilityKey{
-    width: 280px;
+.abilityKeyItem{
     padding-top: 4px;
     color: white;
-    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-.abilityContent li:hover:not(.abilityKey){
+.abilityContent li:hover:not(.abilityKeyItem){
     font-size: 1.3em;
     background: rgba(255,255,255,.3);
     border-radius: 5px;

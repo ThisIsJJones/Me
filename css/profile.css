@@ -34,21 +34,6 @@
     -webkit-animation-delay: .3s;
 }
 
-.slide-out-left {
-    animation: slide-out-left .8s forwards;
-    animation-delay: 0s;
-    -webkit-animation: slide-out-left ease-in .8s forwards;
-    -webkit-animation-delay: 0s;
-}
-
-.slide-in-modal {
-    transform: translateX(100%);
-    animation: slide-in .7s forwards;
-    animation-delay: .7s;
-    -webkit-animation: slide-in ease-out .7s forwards;
-    -webkit-animation-delay: .7s;
-}
-
 @keyframes slide-in {
     100% { transform: translateX(0%); }
 }
@@ -69,6 +54,7 @@
     position: relative;
     display: inline-block;
     vertical-align: top;
+    animation-delay: .4s;
 }
 
 
@@ -121,6 +107,7 @@
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: 6px solid green;
+    animation-delay: .4s;
 }
 
 .expandPicture{
@@ -149,57 +136,6 @@
     margin-top: 4%; /* change this to whatever height you want it */
 }
 
-/* The Modal (background) */
-.modal {
-  display: block; /* Hidden by default */
-  position: absolute; /* Stay in place */
-  z-index: 5; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-    
-}
-
-/*
-@keyframes modalEnter{
-    from {
-        
-    }
-    to {
-        
-    }
-}
-*/
-
-/* Modal Content */
-.modal-content {
-  background-image: linear-gradient(white 10%, gray 70%, green);
-  text-align: center;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 68%;
-  font-size: 1.2em;
-}
-
-/* The Close Button */
-.close {
-  color: black;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
 /*
 Interests
 */
@@ -223,7 +159,7 @@ Interests
 }
 
 #interestImages .interestText:hover ~img{
-    opacity: .4;
+    opacity: .2;
 }
 
 #interestImages .interestText{
@@ -273,7 +209,7 @@ Interests
 }
 
 .removeRealQuick{
-    opacity: .4;
+    opacity: .2;
 }
 
 .showRealQuick{
