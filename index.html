@@ -608,7 +608,7 @@
                 <ul style="">
                     <h4 style="color:#ff9f35">I'd like to know:</h4>
                     <li><span>What brought you here?</span></li>
-                    <li><span>Any suggestions about this website?</span></li>
+                    <li><span>Any suggestions for this website?</span></li>
                     <h4 style="color:#ff9f35">If you represent a company:</h4>
                     <li><span>What company? Located where?</span></li>
                     <li><span>What position are you looking to fill?</span></li>
@@ -861,6 +861,7 @@
                 }
 
             }else if(destination.index == 5) {
+                document.getElementById('quoteContent').innerHTML = "Website developed using Javascript, Bootstrap, CSS, and <a href='https://github.com/alvarotrigo/fullPage.js' target='_blank''>Fullpage.js</a>";
                 if(firstTimeAtContact){
                     firstTimeAtContact = false;
                     document.getElementById("thankyou").classList.add("slide-in");
@@ -874,7 +875,6 @@
         },
         onSlideLeave: function(section, origin, destination, direction){
             
-
             if(section.index == 1){
 
                 if(destination.index == 1){
