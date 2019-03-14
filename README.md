@@ -1,3 +1,3 @@
 # Me
 Personal Website 
-thisisjjones.com
+http://www.thisisjjones.com
