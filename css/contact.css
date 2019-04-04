@@ -46,27 +46,13 @@ form #formMessage{
 }
 
 #sendMessageForm{
-    width: 27%;
-    height: auto;
-    margin-left: 12%;
-    margin-top: 7%;
-    display: inline-block;
-    margin-right: 10%;
     color: white;
-    font-size: 1.2em;
-    padding:20px;
-    transform: translateX(-200%);
-
+    transform: translateX(200%);
 }
 
 #thankyou{
-    position: relative;
-    display: inline-block;
-    width: 40%;
-    margin-top: 4%;
     color: white;
-    vertical-align: top;
-    transform: translateX(200%);
+    transform: translateX(-200%);
 }
 
 #thankyouMessage{
@@ -83,27 +69,15 @@ form #formMessage{
     list-style-type: none;
 }
 
+@media only screen and (min-width: 768px) {
+  #thankDiv {
+    margin-right: 10%;
+  }
+}
 @keyframes slide-in {
     100% { transform: translateX(0%); }
 }
 
 @-webkit-keyframes slide-in {
     100% { -webkit-transform: translateX(0%); }
-}
-
-@media (max-width: 1100px){
-    #thankyouMessage{
-        font-size: 1em;
-    }
-    #sendMessageForm{
-/*        margin-left: 60px;*/
-        margin-right: 5%;
-    }
-}
-
-@media (max-width: 900px){
-    #sendMessageForm{
-         margin-right: 2%;
-        margin-left: 10%;
-    }
 }
