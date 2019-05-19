@@ -15,7 +15,7 @@ function createJobTitle(){
     }
     
     var title2 = document.getElementById("myJobTitle2");
-    var jobTitle = "Backend - Frontend";
+    var jobTitle = "Developing my career and myself";
     
     var delay = 3050;
     var i; 
