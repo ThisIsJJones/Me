@@ -11,8 +11,9 @@
     
     $email_to = '21jrjones21@gmail.com'; 
     $email_subject = "Message from website";
+    $date_rcvd = date("Y/m/d");
 
-    $email_body = "New message: \n    Name:   $name \n    Email:    $visitor_email \n    Message:\n        $message \n\n";
+    $email_body = "New message: \n    Name:   $name \n    Email:    $visitor_email \n  Date:    $date_rcvd  \n   Message:\n        $message \n\n";
 
 
     $myfile = fopen("./email.txt", "a+");
