@@ -7,7 +7,7 @@ function createJobTitle(){
     for(i = 0; i < jobTitle.length; i++){
         var letter = jobTitle.charAt(i);
         var letterElement = document.createElement("span");
-        letterElement.classList.add("letterLift");
+        letterElement.classList.add("letterStyle");
         letterElement.innerHTML = letter;
         letterElement.style.animationDelay = (delay+(i*100))+"ms";
         
@@ -22,7 +22,7 @@ function createJobTitle(){
     for(i = 0; i < jobTitle.length; i++){
         var letter = jobTitle.charAt(i);
         var letterElement = document.createElement("span");
-        letterElement.classList.add("letterLift");
+        letterElement.classList.add("letterStyle");
         letterElement.innerHTML = letter;
         letterElement.style.animationDelay = (delay+(i*100))+"ms";
         

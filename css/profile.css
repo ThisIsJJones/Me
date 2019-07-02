@@ -85,9 +85,9 @@
     position: relative;
     display: inline-block;
     vertical-align: top;
-    opacity: 0;
-    width: 0%;
-    height: 0%;
+    opacity: 1;
+    width: 10%;
+    height: 10%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -97,10 +97,11 @@
 
 .expandPicture{
      animation: expand 1.6s forwards;
+
 }
 
 @keyframes expand {
-    100% {width: 18%; height:18%; opacity: 1;}
+    100% {width: 18%; height:18%;}
 }
 
 #map:hover{
