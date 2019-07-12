@@ -663,8 +663,9 @@
                      <p style="color: #337ab7; font-family: Brush Script MT; font-size: 32pt; float: right;">Jordan Jones</p>
                 </div>
              </div>
+            
              <div id="sendMessageForm" class="col-xs-5 col-xs-offset-1" >
-                 <form method="post" action="./php/email.php" style="margin-right:10%;" onsubmit="return humanValidation()">
+                 <form method="post"  action="./php/email.php" style="margin-right:10%;" onsubmit="return humanValidationInput()">
                      <div>Name</div>
                      <input class="inputByUser" id="formName" type="text" name="senderName" autocomplete="off" required/>
                      <div>Email</div>
@@ -698,7 +699,6 @@
     
 <script src="js/fullpage.js"></script>
 <script src="js/index.js"></script>
-
     <script>(function($){
   'use strict';
     $(window).on('load', function () {

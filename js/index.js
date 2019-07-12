@@ -52,9 +52,8 @@ function slideProfileContent(){
     fullpage.setAllowScrolling(true);
 }
 
-function humanValidation(){
+function humanValidationInput(){
     var humanValidationInputField = document.getElementById("formHumanValidation");
-    alert(humanValidationInputField.value);
     if(humanValidationInputField.value != 15){
         humanValidationInputField.classList.add("invalidAnswer");
         return false;
