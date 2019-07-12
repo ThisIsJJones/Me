@@ -5,10 +5,6 @@
 //ini_set('display_errors', 'On');
 //set_error_handler("var_dump");
 
-    $validationAnswer = $_POST['validationAnswer'];
-    if ($validationAnswer != 15)
-        exit();
-
     $name = $_POST['senderName'];
     $visitor_email = $_POST['senderEmail'];
     $message = $_POST['senderMessage'];

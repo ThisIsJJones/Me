@@ -50,6 +50,14 @@ function slideProfileContent(){
     document.getElementById('fp-nav').classList.remove("remove");
     document.getElementsByClassName("fp-controlArrow")[1].classList.remove("remove");
     fullpage.setAllowScrolling(true);
+}
 
-
+function humanValidation(){
+    var humanValidationInputField = document.getElementById("formHumanValidation");
+    alert(humanValidationInputField.value);
+    if(humanValidationInputField.value != 15){
+        humanValidationInputField.classList.add("invalidAnswer");
+        return false;
+    }
+    return true;
 }

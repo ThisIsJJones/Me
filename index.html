@@ -664,15 +664,15 @@
                 </div>
              </div>
              <div id="sendMessageForm" class="col-xs-5 col-xs-offset-1" >
-                 <form method="post" action="./php/email.php" style="margin-right:10%;">
+                 <form method="post" action="./php/email.php" style="margin-right:10%;" onsubmit="return humanValidation()">
                      <div>Name</div>
-                     <input class="inputByUser" id="formName" type="text" name="senderName" autocomplete="off"/>
+                     <input class="inputByUser" id="formName" type="text" name="senderName" autocomplete="off" required/>
                      <div>Email</div>
-                     <input class="inputByUser" id="formEmail" type="email" name="senderEmail" autocomplete="off"/>
+                     <input class="inputByUser" id="formEmail" type="email" name="senderEmail" autocomplete="off" required/>
                      <div>Message</div>
                      <textarea class="inputByUser" id="formMessage" name="senderMessage" autocomplete="off"></textarea>
                      <div>Are you human? What is 8 + 7?</div>
-                     <input class="inputByUser" id="formHumanValidation" type="number" name="humanValidation" autocomplete="off"/>
+                     <input class="inputByUser" id="formHumanValidation" type="number" name="humanValidation" autocomplete="off" required/>
                      <input class="sendButton" type="submit" name="submit" value="Send"/>
                  </form>
              </div>
