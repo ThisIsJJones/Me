@@ -14,7 +14,7 @@ form .inputByUser {
     background: grey;
     border: none;
     opacity: .9;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: white;
     width: 100%;
     border-radius: 15px;
@@ -38,7 +38,13 @@ form .sendButton{
 }
 
 form #formMessage{
-    height: 140px;
+    height: 80px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
 .applyBoxShadow{
