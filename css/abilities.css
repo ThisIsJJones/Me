@@ -143,6 +143,16 @@
     
 }
 
+.abilityKey div{
+    margin-left:14%;
+}
+
+@media only screen and (max-width: 600px) {
+    .abilityKey div{
+        margin-left: 3%;
+    }   
+}
+
 .abilityContent hr{
     border-color: #ff9f35;
 }

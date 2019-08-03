@@ -70,8 +70,9 @@
             
             <div id="stars"></div>
             
-            <div id="profileContent">
+            <div id="profileContent" class="row">
                
+<!--
                 <div id="leftContent">
                     <h2>
                        Top 5
@@ -93,39 +94,26 @@
                         </ul>
                     </div>
                 </div> 
+-->
+                    <div class="col-sm-1 "></div>
                 
-                    <img class="element" id="profilePicture" data-src="images/IMG_2609.JPG">
+                    <img class="element col-sm-3 col-md-4" id="profilePicture" data-src="images/IMG_2609.JPG">
+                
+                    <div class="col-sm-1"></div>
 
-                <div id="rightContent">
+                <div id="rightContent" class="col-xs-10 col-sm-6 col-md-5">
                     <h2>
-                        Jordan Jones
+                        About Me
                     </h2>
                     <div class="underscore">_</div>
                     <div id="rightDiv"> 
-                        <strong>Current Position:</strong>
-                        <br>
-                        <span><a href="#experience" style="color: #ff9f35;">Menards Software Developer</a></span>
-                        <br class="brSize">
-                        <strong>Email:</strong>
-                        <br>
-                        <span><a href="#contact" style="color: #ff9f35;">21jrjones21@gmail.com</a></span>
-                        <br class="brSize">
-                        <strong>Hometown:</strong>
-                        <br>
-                        <span>Pewaukee, WI</span>
-                        <br class="brSize">
-                        <strong>Willing to relocate?</strong>
-                        <br>
-                        <span>Definitely.
-                        <span>Ideally Colorado</span>
-                        </span>
-                        <br class="brSize">
-                        <strong>Education:</strong>
-                        <br>
-                        <a style="color: #ff9f35;" href="#education">University of Wisconsin - Eau Claire</a>
-                        <br class="brSize">
+                        <p>Hello! I'm Jordan, a Software Developer based in Eau Claire, WI who enjoys building tools that make life a little easier. I develop websites and web apps that present data with an intuitive user-friendly design.</p>
+                        
+                        <p>After graduating from the University of Wisconsin - Eau Claire, I joined the Point of Sale team at Menards where I work on the whole stack, advancing old technologies to new hip ones.</p>
                     </div>
                 </div>
+                <div class="col-sm-1"></div>
+
 <!--
                 <script>
                     
@@ -149,7 +137,7 @@
                 <div class="interestContainer">
                     <div class="interestText">
                         <div class="interestTitle">Football</div>
-                        <p class="interestDetail">With my dad and two older siblings leaving shoes to fill, it was inevitable of me playing. In high school I provided our team with leadership and as captain was the person to rally the troops. I was fortunate to get the opportunity to continue my education in college as well as play football. Football will always be a big part of my life as I have learned so many lessons that drive my day to day actions.</p>
+                        <p class="interestDetail">With my dad and two older siblings leaving shoes to fill, it was inevitable that I would play. In high school I provided our team with leadership and as captain was the person to rally the troops. I took the opportunity to continue my education in college while also playing football. Football will always be a big part of my life as I have learned so many lessons that drive my day to day actions.</p>
                     </div>
                     <img data-src="images/football.jpg">
                 </div>
@@ -439,14 +427,14 @@
             </ul>
                 <div class="container" style="margin-top:15px;">
                         <ul style="height: auto; padding:5px;" class="abilityKey">
-                            <div class="row" style="margin-left:14%;">
+                            <div class="row">
                                 <li class="col-xs-6 abilityKeyItem">
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star-empty"></span>
                                     <span class="glyphicon glyphicon-star-empty"></span>
                                     <span class="glyphicon glyphicon-star-empty"></span>
                                     <span class="glyphicon glyphicon-star-empty"></span>
-                                    Heard of it, seen it, never used it
+                                    Seen it but never used it
                                 </li>
                                 <li class="col-xs-6 abilityKeyItem">
                                     <span class="glyphicon glyphicon-star"></span>
@@ -509,15 +497,13 @@
                         <br>
                         <strong>Software Developer</strong>
                         <ul>
-                            <li>Constructing <span class="XPHighlight">Angular</span> Applications that will replace highly used <a href="https://en.wikipedia.org/wiki/UNIX_System_V" target="_blank" style="color:white">System V</a> software at all stores</li>
-                            <li>Configuring <span class="XPHighlight">Apache</span> to allow <span class="XPHighlight">Angular</span> Applications to be hosted securely and efficiently</li>
+                            <li>Constructing <span class="XPHighlight">Angular</span> applications that will replace legacy software which is highly used at all stores (300+) by all Team Members </li>
+                            <li>Configuring <span class="XPHighlight">Apache</span> to allow <span class="XPHighlight">Angular</span> applications to be dynamic and hosted securely on a <span class="XPHighlight">Unix</span> server</li>
                             <li>Make daily use of several <span class="XPHighlight">Atlassian</span> software products to manage projects and to communicate efficiently with Team Members</li>
                              <div class="location"> Eau Claire, WI</div>
-                           </ul>
-
+                        </ul>
                     </div>
                 </div>
-               
             </div>
         </div>
         <div class="slide">
@@ -535,19 +521,17 @@
                         <br>
                         <strong>Backend Developer</strong>
                         <ul>
-                            <li>Developed and maintained applications for Menards' stores and external web sites primarily using <span class="XPHighlight">Java</span> and <span class="XPHighlight">Angular</span>
+                            <li>Developed and maintained applications for stores and internal web sites primarily using <span class="XPHighlight">Java</span> and <span class="XPHighlight">Angular</span>
                             </li>
-                            <li>Cooperated with a team of 7 to modify, maintain, and implement <span class="XPHighlight">REST/SOAP services</span>
+                            <li>Cooperated with a team of 7 to modify, maintain, and test <span class="XPHighlight">REST/SOAP services</span>
                             </li>
                             <li>Communicated with stores and technical support Team Members to troubleshoot problems as they arose
                             </li>
                             <li>Analyzed data using <span class="XPHighlight">Splunk</span> to gain better insight on how our services were being used
                             </li>
-                            <li>Made daily use of several <span class="XPHighlight">Atlassian</span> software products to manage projects and to coordinate efficiently with Team Members
-                            </li>
                             <li>Utilized frameworks <span class="XPHighlight">Angular</span> and <span class="XPHighlight">Spring</span> to develop the front and back-end of an in-house utility 
                             </li>
-                            <li>With this in-house utility, Team Members have the ability to efficiently search store information using the <span class="XPHighlight">user-friendly</span> interface</li>
+                            <li>Provided Team Members with a <span class="XPHighlight">user-friendly</span> interface to allow store information to be found efficiently and with ease</li>
                              <div class="location"> Eau Claire, WI</div>
                            </ul>
 
@@ -604,7 +588,6 @@
                    <li><span>Major</span><span>Computer Science</span></li>
                    <li><span>GPA</span><span>3.4</span></li>
                    <br>
-                   <br>
                    <li><div id="imageContent">
                         <img id="uwecLogo" data-src="images/UWEC.png"/>
                         </div>
@@ -648,8 +631,8 @@
          <div class="pageBanner">
             Contact
         </div>
-        <div class="row" style="margin-top:10%; position:relative; display:inline-block">
-            <div id="thankyou" class="col-xs-5 col-xs-offset-1">
+        <div class="row contactRow">
+            <div id="thankyou" class="col-xs-11 col-sm-5 col-xs-offset-1">
                 <div id="thankDiv">
                     <h3 style="color: #ff9f35; text-shadow: 1.5px 1.5px #337ab7; letter-spacing:2px;">Let's Chat!</h3>
                     <hr style="border-top: 4px double #337ab7;">
@@ -660,20 +643,29 @@
                         You can also reach me on <a href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank">LinkedIn <img src="/images/linkdin.png" width="20" height="20"></a>.
                      </div>
                      <hr style="border-top: 4px double #337ab7;">
-                     <p style="color: #337ab7; font-family: Brush Script MT; font-size: 32pt; float: right;">Jordan Jones</p>
+                     <p class="hidden-xs" style="color: #337ab7; font-family: Brush Script MT; font-size: 32pt; float: right;">Jordan Jones</p>
                 </div>
              </div>
             
-             <div id="sendMessageForm" class="col-xs-5 col-xs-offset-1" >
-                 <form method="post"  action="./php/email.php" style="margin-right:10%;" onsubmit="return humanValidationInput()">
-                     <div>Name</div>
-                     <input class="inputByUser" id="formName" type="text" name="senderName" autocomplete="off" required/>
-                     <div>Email</div>
-                     <input class="inputByUser" id="formEmail" type="email" name="senderEmail" autocomplete="off" required/>
-                     <div>Message</div>
-                     <textarea class="inputByUser" id="formMessage" name="senderMessage" autocomplete="off" required></textarea>
-                     <div>Are you human? What is 8 + 7?</div>
-                     <input class="inputByUser" id="formHumanValidation" type="number" name="humanValidation" autocomplete="off" required/>
+             <div id="sendMessageForm" class="col-xs-11 col-sm-5 col-xs-offset-1" >
+                 <form method="post"  action="./php/email.php" class="row" style="margin-right:10%;" onsubmit="return humanValidationInput()">
+                     <div class="col-xs-6 col-sm-12">
+                        <div class="inputLabel">Name</div>
+                        <input class="inputByUser" id="formName" type="text" name="senderName" autocomplete="off" required/>
+                     </div>
+                     <div class="col-xs-6 col-sm-12">
+                        <div class="inputLabel">Email</div>
+                        <input class="inputByUser" id="formEmail" type="email" name="senderEmail" autocomplete="off" required/>
+                     </div>
+                     <div class="col-xs-6 col-sm-12">
+                        <div class="inputLabel">Message</div>
+                        <textarea class="inputByUser" id="formMessage" name="senderMessage" autocomplete="off" required></textarea>
+                     </div>
+                     <div class="col-xs-6 col-sm-12">
+                        <div class="inputLabel">Are you human? What is 8 + 7?</div>
+                        <input class="inputByUser" id="formHumanValidation" type="number" name="humanValidation" autocomplete="off" required/>
+                     </div>
+                     
                      <input class="sendButton" type="submit" name="submit" value="Send"/>
                  </form>
              </div>
@@ -682,7 +674,7 @@
 
 </div>
     
-<div class="gradient" id="quoteContainer">
+<div class="hidden-xs hidden-sm gradient" id="quoteContainer">
     <span id="quoteContent"></span>
 </div>
 
@@ -757,6 +749,7 @@
         loopHorizontal: false,
         lazyLoading: true,
         css3: true,
+        responsiveHeight: 400,
         afterLoad: function(origin, destination, direction){
             if(destination.index==0){
                 document.getElementById("fp-nav").classList.remove('removeNavBar');

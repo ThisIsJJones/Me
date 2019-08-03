@@ -56,12 +56,20 @@
         padding: 10px;
         width: 310px;
     }
+    #educationContent ul li{
+        padding-left: 10px;
+        padding-right: 5px;
+    }
 }
 
 @media (max-width: 1050px){
     #educationContent ul{
         padding: 0px;
         width: 300px;
+    }
+    #educationContent ul li{
+        padding-left: 10px;
+        padding-right: 5px;
     }
 }
 

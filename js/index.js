@@ -43,8 +43,8 @@ function removeNavigation(){
 }
 
 function slideProfileContent(){
-    document.getElementById("leftContent").classList.add("slide-in");
-    document.getElementById("rightContent").classList.add("slide-in");
+//    document.getElementById("leftContent").classList.add("slide-in");
+//    document.getElementById("rightContent").classList.add("slide-in");
     document.getElementById("profilePicture").classList.add("expandPicture");
     document.getElementById("quoteContent").style.opacity = 1;
     document.getElementById('fp-nav').classList.remove("remove");

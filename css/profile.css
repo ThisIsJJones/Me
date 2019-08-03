@@ -13,18 +13,22 @@
     }
 }
 
-#leftContent, #rightContent{
-    text-align: center;
-    padding-right: 35px;
-    width: 39%; 
-}
-
 #leftContent{
     transform: translateX(-200%);
 }
 
 #rightContent{
-    transform: translateX(200%);
+/*    transform: translateX(200%);*/
+}
+
+@media only screen and (max-width: 768px) {
+    #rightContent{
+             margin-left: 55px;
+
+    }
+    #profileContent{
+        top: 6%;
+    }
 }
 
 .slide-in {
@@ -49,15 +53,21 @@
 @-webkit-keyframes slide-out-left {
     100% { -webkit-transform: translateX(-100%); }
 }
+/*
 
 #leftContent, #rightContent{
     position: relative;
     display: inline-block;
     vertical-align: top;
     animation-delay: .4s;
+    text-align: center;
+    padding-right: 35px;
+    width: 39%; 
 }
 
 
+
+*/
 #leftContent h2, #rightContent h2{
     display: inline;
     font-size: 2.7em;
@@ -65,11 +75,11 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 #leftContent #leftDiv, #rightContent #rightDiv {
     color:darkgrey;
     font-size: 1.5em;
-    margin-top: 10%;
+    margin-top: 5%;
+    text-align: left;
 }
 
 #leftDiv span{
@@ -80,19 +90,19 @@
     color: white;
     font-size: 1.1em;
 }
-
 #profilePicture{
     position: relative;
     display: inline-block;
     vertical-align: top;
-    opacity: 1;
-    width: 18%;
-    height: 18%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    border-radius: 5%;
     border: 6px solid green;
     animation-delay: .4s;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 
 .expandPicture{
@@ -180,6 +190,7 @@ Interests
     width: 70%;
     color: white;
     text-align: center;
+    font-size: 1em;
 }
 
 .interestTitle{
