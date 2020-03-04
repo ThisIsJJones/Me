@@ -150,28 +150,28 @@
     display: inline-block;
     height: 30px;
     width: 30px;
-    background: url('../images/closed_box.png') no-repeat 0 0;
+    background: url('/images/closed_box.png') no-repeat 0 0;
     background-size: contain;
     background-repeat: no-repeat;
     transition: all 300ms
 }
 
 a:hover > #project-box{
-    background-image: url('../images/open_box.png');
+    background-image: url('/images/open_box.png');
 }
 
 #contact-box {
     display: inline-block;
     height: 30px;
     width: 30px;
-    background: url('../images/envelope_closed.png') no-repeat 0 0;
+    background: url('/images/envelope_closed.png') no-repeat 0 0;
     background-size: contain;
     background-repeat: no-repeat;
     transition: background-image 300ms
 }
 
 a:hover > #contact-box{
-    background-image: url('../images/envelope_open.png');
+    background-image: url('/images/envelope_open.png');
 }
 
 #updateDate:hover {
