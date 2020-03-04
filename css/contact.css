@@ -42,11 +42,7 @@ form #formMessage{
 form .sendButton{
     float: right;   
     border-radius: 15px;
-    
     font-size: 1.1em;
-    width: 70px;
-    height: 30px;
-/*    border: none;*/
     background-color: transparent;
     border: 1px #337ab7 solid;
     color: #337ab7;
@@ -55,7 +51,7 @@ form .sendButton{
 form .sendButton:hover {
     background-color: #ff9f35;
     color: white;
-    border: 1px solid white;
+    border: 1px solid #337ab7;
 }
 
 form #formMessage{
@@ -74,12 +70,12 @@ input[type=number]::-webkit-outer-spin-button {
 
 #sendMessageForm{
     color: white;
-    transform: translateX(200%);
+/*    transform: translateX(200%);*/
 }
 
 #thankyou{
     color: white;
-    transform: translateX(-200%);
+/*    transform: translateX(-200%);*/
 }
 
 #thankyouMessage{

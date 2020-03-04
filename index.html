@@ -17,6 +17,7 @@
     <link rel="stylesheet" type="text/css" href="css/experience.css">
     <link rel="stylesheet" type="text/css" href="css/education.css">
     <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" type="text/css" href="css/stars.css">
     
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -39,11 +40,44 @@
     <div class="sk-circle12 sk-circle"></div>
   </div>
 </div>
-    
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h3 class="modal-title" id="myModalLabel">Tech Stack</h3>
+          </div>
+          <div class="modal-body">
+              <div>
+                <h4>Frontend</h4> 
+                  <ul>
+                      <li>Love Angular components, services, and <i>sometimes</i> NgRx store</li>
+                    <li>Javascript and Typescript with RxJS</li>
+                    <li>and of course Bootstrap</li>
+                  </ul>
+              </div>
+              
+               <div>
+                <h4>Backend</h4> 
+                   <ul>
+                       <li>Java Spring Boot</li>
+                       <li>Node.js with Express.js</li>
+                       <li>MongoDB and MySQL</li>
+                       <li>Third party API usage: AWS, Google, and others</li>
+                   </ul>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">I'm Done Looking</button>
+          </div>
+        </div>
+      </div>
+    </div>
 <div id="fullpage" class="hero">    
     
     
-     <div class="section" id="profileBackground">
+    <div class="section" id="profileBackground">
         <div  class="animateStarY-1" id="stars"></div>
         <div id="sway">
             <div class="animateStarY-2" id="stars2"></div>
@@ -52,521 +86,188 @@
 
         <div id="content" >
             <div class="gradient" id="title">
-                <span style="letter-spacing: 4px"><span style="background: -webkit-linear-gradient(forestGreen 40%, #38495a); -webkit-background-clip: text;">Jordan Jones</span></span>
-                <br>
-                <span id="myJobTitle" class="gradient" style="font-size: 12pt;"></span>
-                <span id="myJobTitle2" style="font-size:.24em; letter-spacing:4px; display:block;"></span>
+                <div id="name">Jordan Jones</div>
+                <div style="text-align: center; letter-spacing: 1px" id="myCarousel" class="carousel" data-ride="carousel" data-interval="4000">
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner">
+                              
+                            <div class="item active">
+                              <div>Recent Graduate</div>
+                            </div>
+                              
+                            <div class="item">
+                              <div>A Full Stack Developer at <a href="https://www.menards.com/main/home.html" target="_blank">Menards</a></div>
+                            </div>
+
+                            <div class="item">
+                              <div>Relocating to Colorado</div>
+                            </div>
+                              
+                            <div class="item">
+                              <div>Pursuing a F.I.R.E. Lifestyle</div>
+                            </div>
+                              
+                            <div class="item">
+                              <div>Hiker and Traveler</div>
+                            </div>
+                              
+                            <div class="item">
+                              <div>Fisherman and Skier</div>
+                            </div>
+                          </div>
+                        </div>
+<!--
+                <div id="row1">A Full Stack Developer</div>
+                <div id="row2"></div>
+-->
             </div>
-            <div id="options">
+            <div class="options fade-in-animation">
                 <a href="#me"><i class="fa fa-chevron-circle-down" style="font-size: 50px"></i></a>
             </div>
         </div>
     </div>
-    <div class="section" style="background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
-        <div class="slide">
+    <div class="section" style=" background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
            <div class="pageBanner">
-                    Me
+                    Home
             </div>
             
             <div id="stars"></div>
-            
+            <div  style="position: relative">
+               <img class="" style="position: absolute; width: 1300px;" id="profilePicture" src="images/IMG_2605.JPG">
+
+            </div>
             <div id="profileContent" class="row">
-               
-<!--
-                <div id="leftContent">
-                    <h2>
-                       Top 5
-                    </h2>
+                <div id="rightContent" class="col-xs-12 col-sm-9 col-sm-offset-3 col-md-6 col-md-offset-5" style="padding: 0">
+                    <div id="onHoverTopHalf"></div>
+                    <div id="onHoverBottomHalf"></div>
+                    <h2>Jordan Jones</h2>
                     <div class="underscore">_</div>
                     
-                    <div id="leftDiv">
-                        
-                        <ul style="list-style-type:none;display:block;text-align:left;">
-                            <li>A sharp eye for detail<span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
-                            <br>
-                            <li>Asking 'what if' questions and <br> playing devil's advocate<span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
-                            <br>
-                            <li>Communication skills, exchanging <br> thoughts and ideas efficiently<span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
-                            <br>
-                            <li>Relentless work ethic toward the <br> achievement of goals<span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
-                            <br>
-                            <li>Eager to learn anything new<span class="glyphicon glyphicon-check" style="float:right;margin-right:10%;"></span></li>
-                        </ul>
-                    </div>
-                </div> 
--->
-                    <div class="col-sm-1 "></div>
-                
-                    <img class="element col-sm-3 col-md-4" id="profilePicture" src="images/IMG_2609.JPG">
-                
-                    <div class="col-sm-1"></div>
-
-                <div id="rightContent" class="col-xs-10 col-sm-6 col-md-5">
-                    <h2>
-                        About Me
-                    </h2>
-                    <div class="underscore">_</div>
+                    <div style="color: white; padding-right: 5px; padding-left: 5px;">My background involves designing, developing, and testing Java backend services and Angular frontend applications. I'm at the start of my career and currently expanding my knowledge on best software practices. It's easy to build something, but I challenge myself to build it right. I'm learning from those around and those at <a href="https://www.indiehackers.com/" target="_blank" style="color: #ff9f35">Indie Hackers</a>.</div>
                     <div id="rightDiv"> 
-                        <p>Hello! I'm Jordan, a Software Developer based in Eau Claire, WI who enjoys building tools that make life a little easier. I develop web apps that present data with an intuitive user-friendly design. Regardless the programming language or project at hand I enjoy what I do and am eagar to learn anything new.</p>
+                        <div class="row menuLinks" style="margin-left: 0; margin-right: 0; margin-top: 30px; margin-bottom: 20px; text-align: center;">
+                                <a href="./Resume.pdf" class="col-xs-4" download="">
+                                    <img width="30" src="./images/resume_file.png"/>
+                                    <p>Resume</p>
+                                </a>
+                                <a href="#projects" class="col-xs-4" >
+                                    <div id="project-box"></div>
+                                    <p>Projects</p>
+                                </a>
+                                <a href="https://github.com/ThisIsJJones" class="col-xs-4" target="_blank">
+                                    <img src="images/GitHub.png" width="20" height="20"/>
+                                    <p>Code</p>
+                                </a>
+                                <div class="col-xs-12" style="height: 40px;"></div>
+                                <a data-toggle="modal" data-target="#myModal" class="col-xs-4" target="_blank" style="cursor: pointer">
+                                    <img src="images/tech_stack.png" width="33" height="33">
+                                    <p>Tech Stack</p>
+                                </a>
+                                <a onclick="showSnackBar()" target="_blank" class="col-xs-4" style="cursor: pointer">
+                                    <span class="glyphicon glyphicon-comment"></span>
+                                    <p>Blog</p>
+                                    <div id="snackbar">Coming soon</div>
+                                </a>
+                                <a href="#contact" class="col-xs-4" >
+                                    <div id="contact-box"></div>
+                                    <p>Contact</p>
+                                </a>
+                                
+                        </div>
                         
-                        <p>After graduating from the University of Wisconsin - Eau Claire, I joined the Point of Sale team at Menards where I work on the whole stack, advancing old technologies to new hip ones.</p>
                     </div>
-                </div>
-                <div class="col-sm-1"></div>
-
-<!--
-                <script>
-                    
-                    function calculate_age(dob) { 
-                        var diff_ms = Date.now() - dob.getTime();
-                        var age_dt = new Date(diff_ms); 
-                        return Math.abs(age_dt.getUTCFullYear() - 1970);
-                    }
-                    document.getElementById('myAge').innerHTML = calculate_age(new Date(1997, 02, 20));
-                </script>
--->
-            </div>
-            </div>
-            <div class="slide">
-            <div class="pageBanner" style="position: relative;">
-                    Interests
-            </div>
-            <div id="stars"></div>
-                
-            <div id="interestImages">
-                <div class="interestContainer">
-                    <div class="interestText">
-                        <div class="interestTitle">Football</div>
-                        <p class="interestDetail">With my dad and two older siblings leaving shoes to fill, it was inevitable that I would play. In high school I provided our team with leadership and as captain was the person to rally the troops. I took the opportunity to continue my education in college while also playing football. Football will always be a big part of my life as I have learned so many lessons that drive my day to day actions.</p>
-                    </div>
-                    <img data-src="images/football.jpg">
-                </div>
-                <div class="interestContainer">
-                    <div class="interestText">
-                        <div class="interestTitle">Outdoors</div>
-                        <p class="interestDetail">Fishing, skiing, hiking, camping, and eating s'mores with friends and family are all key elements of being able to escape to the outdoors. For me, being out in nature is always ideal, whether that be at a cabin or out camping. I can't wait to explore more of the outdoors and the gorgeous views this Earth has to offer.</p>
-                    </div>
-                    <img data-src="images/waterfall.JPG">
-                </div>
-                <div class="interestContainer">
-                    <div class="interestText">
-                        <div class="interestTitle">Astronomy</div>
-                        <p class="interestDetail">A love for the sky and everything beyond. There is something about seeing planets that are millions of miles away and stars that make all sorts of images in the night sky. But beyond just seeing these objects I enjoy learning how <i>they</i> all came to be.</p>
-                    </div>
-                    <img data-src="images/uwec_moon.jpg">
+                    <div id="updateDate">Updated 03/04/20</div>
                 </div>
                 
+                
             </div>
-            <div class="mainInterest">
-                <h3 style="color:#ff9f35">What sparked the interest?</h3>
-                <p>
-                   Interest was sparked in 8th grade when I created a game in a 300+ slide show on PowerPoint. It was self initiated and one of my more memorable projects. The game utilized internal hyperlinks, that when touched with the mouse a life would be lost. Each slide had a different maze layout that contained locked doors and various obstacles. After copying the PowerPoint game on a flash drive and sharing with many, it was a done deal, I knew I wanted to continue to work with computers. I enjoy creating stuff that puts a smile on someone's face. I was in grade school at the time and it still holds true today.
-                </p>
+            
+            <div class="options">
+                <a href="#projects"><i class="fa fa-chevron-circle-down" style="font-size: 50px"></i></a>
             </div>
-        </div>
     </div>
     <div class="section" style=" background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 90%);">
         <div class="pageBanner">
-                    Toolbox
+            Projects
         </div>
         
         <div id="stars"></div>
-        <div>
-            <span class="abilityContent" >
+        
+        <div class="projectContent">
+<!--
+            <div>
+                These projects were created because  they 'scratch my itch' to develop. 
+            </div>
+-->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+              <div class="panel panel-default">
+                <div class="panel-heading" id="headingOne" 
+                     role="button"
+                     data-toggle="collapse" href="#collapseOne"  
+                     data-parent="#accordion"  aria-expanded="true" aria-controls="collapseOne">
+                  <h2 class="panel-title">
+                      iXplore
+                  </h2>
+                  <hr>
+
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in row" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="panel-body col-xs-12 col-sm-8 col-sm-offset-2">
+                     <p>This web application allows me to pin on a map all the places I want to visit as well as the places I have visited. Then I'm able to check off each place as I go and upload those gorgeous pictures that usually just sit on my camera. I favorite the good ones and soon will allow myself to share a link to the map.</p>
+                      <p>
+                     Built with Angular 8 while also integrating Google APIs for login and map. On the backend I used Node.js, MongoDB, and AWS S3 to save all the images. Currently expanding this project so others can create their own map!</p>
+                  </div>
+                    <div class="hidden-xs col-sm-2"></div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading collapsed" id="headingTwo"  role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h2 class="panel-title">
+                      On The House
+                  </h2>
+                  <hr>
+
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse row" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body col-xs-12 col-sm-8 col-sm-offset-2">
+                    <p>For a Mobile Development course our goal was to create any app of our desire. After long thought and many ideas, usually to far fetched to get done in the limited time, we landed on the idea of <i>On The House</i>. It's a location based raffle, when inside the radius of a participating restaurant/bar the app enters you into their raffle. The app counts how many times you win, lose, raffles entered, and your percentage to win each raffle. The idea was to bring some sense of camaraderie with the people inside the establishment.</p>
+                    <p>Built for iOS with Swift. We used Java and MySQL to handle the raffle operations and to store data. A cron job ran periodically to choose a winner then send a push notification to the winning iPhone. The winner would then be shown a unique screen that could get them a discounted or possibly free item.</p>
+                  </div>
+                  <div class="hidden-xs col-sm-2"></div>
+
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading collapsed" id="headingThree"
+                     role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h2 class="panel-title">
+                        Party.sh
+                  </h2>
+                    <hr>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse row" role="tabpanel" aria-labelledby="headingThree">
+                  <div class="panel-body col-xs-12 col-sm-8 col-sm-offset-2">
+                    <p>When two roommates and I hosted an Oktoberfest party we wanted to have some sort of activity that was constantly happening. So, we wrote a bash script that selected random people and told them what to do (keg stand, spin, take a beerski). The script ran at random intervals and spoke over the music through the speakers using the Mac 'Say' Command. Everyone was anxiously waiting to hear who would be called out next. By far the most memorable project we created.</p>
+                  </div>
+                  <div class="hidden-xs col-sm-2"></div>
+
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading collapsed" id="headingFour">
+                  <h4 class="panel-title">
+                       * More to Come *
+                  </h4>
+                </div>
                 
-                <ul id="ability-1">
-                    <h2>Languages</h2>
-                        <hr align="right">
-                    <li>
-                        <span>Java</span>
-                        <span class="glyphicon glyphicon-star" style="color: yellow;"></span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                        </span>
-                    </li>
-                        <li>
-                        <span>HTML</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Java/Type Script</span>
-                        <span class="glyphicon glyphicon-star " style="color: yellow;"></span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>C</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>C++</span>
-                        <span class="glyphicon "></span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                             <span class="glyphicon glyphicon-star "></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Python</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>SQL</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Swift / Xcode</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-
-                    <li>
-                        <span>CSS</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Node.js</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Progress</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                </ul>
-                <ul id="ability-2">
-                    <h2>Frameworks</h2>
-                    <hr align="right">
-                    <li>
-                        <span>Spring Framework</span>
-                        <span class="glyphicon glyphicon-star " style="color: yellow;"></span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Angular 2+</span>
-                        <span class="glyphicon glyphicon-star" style="color: yellow;"></span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                     <li>
-                        <span>Hibernate</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Bootstrap</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Express.js</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                </ul>
-                <ul id='ability-3'>
-                    <h2>Misc.</h2>
-                        <hr align="right">
-                    <li>
-                        <span>Debugging</span>
-                        <span class="glyphicon glyphicon-star " style="color: yellow;"></span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star "></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                            <span class="glyphicon glyphicon-star "></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Agile Development</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Git</span>
-                        <span class="glyphicon glyphicon-star " style="color: yellow;"></span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>MVC Pattern</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>REST API</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>Unix - Bash</span>
-                        <span class="glyphicon glyphicon-star " style="color: yellow;"></span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-                    <li>
-                        <span>GoF Design Patterns</span>
-                        <span class="abilityStat">
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </span>
-                    </li>
-            </ul>
-                <div class="container" style="margin-top:15px;">
-                        <ul style="height: auto; padding:5px;" class="abilityKey">
-                            <div class="row">
-                                <li class="col-xs-6 abilityKeyItem">
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    Read it but never use it
-                                </li>
-                                <li class="col-xs-6 abilityKeyItem">
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    Use in development 
-                                </li>
-                                <li class="col-xs-6 abilityKeyItem">
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    Use it a handful of times
-                                </li>
-                                <li class="col-xs-6 abilityKeyItem">
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    5+ years
-                                </li>
-                                <li class="col-xs-6 abilityKeyItem">
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                    Getting the hang of it
-                                </li>
-                                <li class="col-xs-6 abilityKeyItem">
-                                    <span class="glyphicon glyphicon-star " style="color: yellow;"></span>
-                                    Currently improving
-                                </li>
-                            </div>
-                        </ul>
-                </div>
-            </span>
-        </div>
-    </div>
-    
-    <div class="section" style=" background: radial-gradient(ellipse at top, #1B2735 0%, #090A0F 90%);">
-        <div class="pageBanner">
-             Experience
-        </div>
-        <div class="slide">
-            <div id="stars"></div>
-            <div class="jobs">
-                <div id=menardsExperience>
-                    <div class="jobTitle">
-                        <h3>Menards Inc.</h3>
-                        <p>June 2019 - Present</p>
-                    </div>
-                    <hr>
-                    <div class="jobDesc">
-                        <strong>Point of Sale</strong>
-                        <br>
-                        <strong>Software Developer</strong>
-                        <ul>
-                            <li>Constructing <span class="XPHighlight">Angular</span> applications that will replace legacy software which is highly used at all stores by all Team Members </li>
-                            <li>Interfacing with internal <span class="XPHighlight">REST APIs</span> to help Team Members meet our client's needs, as well as help store support solve issues</li>
-                            <li>Configuring <span class="XPHighlight">Apache</span> to allow <span class="XPHighlight">Angular</span> applications to be dynamic and hosted securely on a <span class="XPHighlight">Unix</span> server</li>
-                            <li>Make daily use of several <span class="XPHighlight">Atlassian</span> software products to manage projects and to communicate efficiently with Team Members</li>
-                             <div class="location"> Eau Claire, WI</div>
-                        </ul>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-        <div class="slide">
-            <div id="stars"></div>
-
-            <div class="jobs">
-                <div id=menardsExperience>
-                    <div class="jobTitle">
-                        <h3>Menards Inc.</h3>
-                        <p>May 2017 - June 2019</p>
-                    </div>
-                    <hr>
-                    <div class="jobDesc">
-                        <strong>Point of Sale - Intern</strong>
-                        <br>
-                        <strong>Backend Developer</strong>
-                        <ul>
-                            <li>Developed and maintained applications for stores and internal websites primarily using <span class="XPHighlight">Java</span> and <span class="XPHighlight">Angular</span>
-                            </li>
-                            <li>Cooperated with a team of 7 to modify, maintain, and test <span class="XPHighlight">REST/SOAP services</span>
-                            </li>
-                            <li>Communicated with stores and technical support Team Members to troubleshoot problems as they arose
-                            </li>
-                            <li>Analyzed data using <span class="XPHighlight">Splunk</span> to gain better insight on how our services were being used
-                            </li>
-                            <li>Utilized frameworks <span class="XPHighlight">Angular</span> and <span class="XPHighlight">Spring</span> to develop the front and back-end of an in-house utility 
-                            </li>
-                            <li>Provided Team Members with a <span class="XPHighlight">user-friendly</span> interface to allow store information to be found efficiently and with ease</li>
-                             <div class="location"> Eau Claire, WI</div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide">
-            <div id="stars"></div>
-            
-            <div class="jobs">
-                <div id=michaelExperience>
-                    <div class="jobTitle">
-                        <h3>Michael Angelo's</h3>
-                        <p>June 2016 - August 2016</p>
-                    </div>
-                    <hr>
-                    <div class="jobDesc">
-                        <strong>Summer Intern</strong>
-                        <br>
-                        <ul>
-                            <li>Developed a program to help mechanics and Inventory Management find 1000+ parts during reorganization of the inventory warehouse</li>
-                            <li>Created a <span class="XPHighlight">user-friendly</span> interface using <span class="XPHighlight">Java Swing</span> to present the data to Inventory Management</li>
-                            <li>Realized the problem and independently developed the solution</li>
-                            <li>Utilized <span class="XPHighlight">MySQL</span> to organize inventory data</li>
-                            <li>Significantly reduced machine down time, which saved the company time, frustration, and resources</li>   
-                             <div class="location"> Austin, TX</div>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
+        
         </div>
         
+        <div class="options">
+            <a href="#education"><i class="fa fa-chevron-circle-down" style="font-size: 50px"></i></a>
+        </div>
     </div>
     <div class="section" style="background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 90%);">
         <div class="pageBanner">
@@ -579,7 +280,7 @@
            <div id="courses">
             <br>
                <ul id="educationEauClaire">
-                <h2>Eau Claire</h2>
+                <h2>UW - Eau Claire</h2>
                 <hr align="right">
                    <li><span>Graduation</span><span>May 2019</span></li>
                    <li><span>Degree</span><span>Bachelor of Arts & Sciences</span></li>
@@ -615,13 +316,19 @@
                 <h2>Books</h2>
                 <hr align="right">
                    <li><span>Art of War</span></li>
-                   <li><span>The Fifth Science</span></li>
+                   <li><span>Soft Skills: The software developer's life manual</span></li>
+                   <li><span>The Stranger in the Woods</span></li>
                    <li><span>Hacking - The Art of Exploitation</span></li>
                    <li><span>Java Network Programming</span></li>
+                   <li><span>The Fifth Science</span></li>
                    <li><span>The C++ Programming Language</span></li>
                    <li><span>Code Complete</span></li>
                 </ul>
             </div>
+        </div>
+        
+        <div class="options">
+            <a href="#contact"><i class="fa fa-chevron-circle-down" style="font-size: 50px"></i></a>
         </div>
        
     </div>
@@ -635,10 +342,19 @@
                     <h3 style="color: #ff9f35; text-shadow: 1.5px 1.5px #337ab7; letter-spacing:2px;">Let's Chat!</h3>
                     <hr style="border-top: 4px double #337ab7;">
                     <div id="thankyouMessage">
-                        I create software to enhance people's lives and am seeking to continue this for a lifetime. Whether the software is for the average joe or other developers, I enjoy building tools that will help. Thank you for taking the time to learn about myself, now I pass the conch to you. If you believe I can contribute to your team send me an email via the form to the right and let's talk.
+                        If you want help developing a product or just want to share a thought, I'm all ears. Fill out the form to get started.
                         <hr>
-                         For more information about myself, download my <a href="./Resume.pdf" download="">Resume</a>.  If you wish to see some of the code I've written, check out my <a href="https://github.com/ThisIsJJones" target="_blank"> Github <img src="images/GitHub.png" width="20" height="20"></a>. 
-                        You can also reach me on <a href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank">LinkedIn <img src="/images/linkdin.png" width="20" height="20"></a>.
+                        <ul style="list-style: none">
+                            <li>
+                                 Reach out on <a href="https://www.linkedin.com/in/jordan-jones-636b59152" target="_blank">LinkedIn <img src="/images/linkdin.png" width="20" height="20"></a>
+                            </li>
+                            <li>
+                                Check out my <a href="https://github.com/ThisIsJJones" target="_blank"> Github <img src="images/GitHub.png" width="20" height="20"></a>
+                            </li>
+                            <li>
+                                Download my <a href="./Resume.pdf" download="">Resume</a> 
+                            </li>
+                        </ul>
                      </div>
                      <hr style="border-top: 4px double #337ab7;">
                      <p class="hidden-xs" style="color: #337ab7; font-family: Brush Script MT; font-size: 32pt; float: right;">Jordan Jones</p>
@@ -660,26 +376,20 @@
                         <textarea class="inputByUser" id="formMessage" name="senderMessage" autocomplete="off" required></textarea>
                      </div>
                      <div class="col-xs-6 col-sm-12">
-                        <div class="inputLabel">Are you human? What is 8 + 7?</div>
+                        <div class="inputLabel">Are you human? What is eight plus 7?</div>
                         <input class="inputByUser" id="formHumanValidation" type="number" name="humanValidation" autocomplete="off" required/>
                      </div>
                      
-                     <input class="sendButton" type="submit" name="submit" value="Send"/>
+                     <input class="sendButton col-sm-12" type="submit" name="submit" value="Send"/>
                  </form>
              </div>
+            
+            
         </div>
+        <div style="color:white; text-align: center; width: 100%; position: absolute; bottom: 10px;">Website developed using plain old HTML, Javascript, CSS, Bootstrap, and with the help of <a href='https://github.com/alvarotrigo/fullPage.js' target='_blank'>Fullpage.js</a></div>
     </div>
-
 </div>
     
-<div class="hidden-xs hidden-sm gradient" id="quoteContainer">
-    <span id="quoteContent"></span>
-</div>
-
-    
-    
-
-
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
@@ -689,83 +399,31 @@
     
 <script src="js/fullpage.js"></script>
 <script src="js/index.js"></script>
-    <script>(function($){
-  'use strict';
-    $(window).on('load', function () {
-        if ($(".pre-loader").length > 0)
-        {
-            $(".pre-loader").fadeOut(1000);
-        }
-    });
-})(jQuery)</script>
     
-
-
 <script>
-    createJobTitle();
-    var quotes = [""];
-
+    setupFormFocus();
     
-    document.getElementById("quoteContent").style.opacity = 0;
-    
-    document.getElementById("formName").classList.add("applyBoxShadow")
-    document.getElementById("formName").addEventListener("click", () => {
-        document.getElementById("formName").classList.add("applyBoxShadow")
-        document.getElementById("formEmail").classList.remove("applyBoxShadow")
-        document.getElementById("formMessage").classList.remove("applyBoxShadow")
-        document.getElementById("formHumanValidation").classList.remove("applyBoxShadow")
-    })
-    
-    document.getElementById("formEmail").addEventListener("click", () => {
-        document.getElementById("formName").classList.remove("applyBoxShadow")
-        document.getElementById("formEmail").classList.add("applyBoxShadow")
-        document.getElementById("formHumanValidation").classList.remove("applyBoxShadow")
-        document.getElementById("formMessage").classList.remove("applyBoxShadow")
-    })
-    
-    document.getElementById("formMessage").addEventListener("click", () => {
-        document.getElementById("formName").classList.remove("applyBoxShadow")
-        document.getElementById("formEmail").classList.remove("applyBoxShadow")
-        document.getElementById("formHumanValidation").classList.remove("applyBoxShadow")
-        document.getElementById("formMessage").classList.add("applyBoxShadow")
-    })
-    
-    document.getElementById("formHumanValidation").addEventListener("click", () => {
-        document.getElementById("formName").classList.remove("applyBoxShadow")
-        document.getElementById("formEmail").classList.remove("applyBoxShadow")
-        document.getElementById("formMessage").classList.remove("applyBoxShadow")
-        document.getElementById("formHumanValidation").classList.add("applyBoxShadow")
-    })
-    
-    
-    var onSlideNumber1 = false;
-    
-    var meSlide = 0;
-    var experienceSlide = 0;
-    var firstTimeAtContact = true;
     var fullpage = new fullpage('#fullpage', {
         //options here
         licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE',
-         autoScrolling:true,
+        autoScrolling:true,
         lockAnchors: false,
-        anchors: ['home', 'me', 'toolbox', 'experience', 'education', 'contact'],
-	   verticalCentered: false,
+        anchors: ['home', 'me', 'projects', 'education', 'contact'],
+	    verticalCentered: false,
         navigation: true,
-        navigationTooltips: ['Home', 'Me', 'Toolbox', 'Experience', 'Education', 'Contact'],
+        navigationTooltips: ['Home', 'Me', 'Projects', 'Education', 'Contact'],
         navigationPosition: 'left',
         slidesNavigation: false,
         loopHorizontal: false,
         lazyLoading: true,
         css3: true,
-        setResponsive: true,
-        responsiveHeight: 600,
         afterLoad: function(origin, destination, direction){
             if(destination.index==0){
                 document.getElementById("fp-nav").classList.remove('removeNavBar');
                 document.getElementById("fp-nav").classList.remove('addNavBar');
                 document.getElementById("fp-nav").classList.add('removeNavBar');
 
-            }else if(destination.index==5){
+            }else if(destination.index==4){
                 document.getElementById("formName").focus();
                 document.getElementById("formName").classList.add("applyBoxShadow")
                 document.getElementById("formEmail").classList.remove("applyBoxShadow")
@@ -779,171 +437,29 @@
                 document.getElementById("stars").classList.remove("animateStarY-1");
                 document.getElementById("stars2").classList.remove("animateStarY-2");
                 document.getElementById("stars3").classList.remove("animateStarY-3");
+            } else if(origin.index == 1) {
+                $('#myModal').modal('hide');
             }
             
             if(destination.index == 0){
                 document.getElementById("stars").classList.add("animateStarY-1");
                 document.getElementById("stars2").classList.add("animateStarY-2");
                 document.getElementById("stars3").classList.add("animateStarY-3");
-                document.getElementById("quoteContainer").style = "display: none;";
                 removeNavigation();
             }else{
-                document.getElementById("quoteContainer").style="display: block;"
-
-                if(destination.index == 1){
-                   
-                    if(meSlide == 0){
-                        document.getElementById('fp-nav').classList.remove('fp-right');
-                        document.getElementById('fp-nav').classList.add('fp-left');
-
-                        var sections = document.getElementById('fp-nav').children[0].childNodes.length;
-                        var index = 0;
-                        for(index=0; index<sections; index++){
-                            document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-right')
-                            document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-left')
-                        }
-                    }else{
-                        document.getElementById('fp-nav').classList.remove('fp-left');
-                        document.getElementById('fp-nav').classList.add('fp-right');
-
-                        var sections = document.getElementById('fp-nav').children[0].childNodes.length;
-                        var index = 0;
-                        for(index=0; index<sections; index++){
-                            document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-left')
-                            document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-right')
-                        }
-                    }
-
-
-                    if(onSlideNumber1){
-                        document.getElementById("quoteContent").innerHTML = quotes[Math.floor((Math.random()*quotes.length))];
-                    }else{
-                        document.getElementById("quoteContent").innerHTML = "Navigate to the right to read about my interests or keep scrolling";
-                    }
-                }else{
-                    document.getElementById("quoteContent").innerHTML = quotes[Math.floor((Math.random()*quotes.length))];
-                }
                 showNavigation();
-                slideProfileContent();
             }
             
             if(destination.index == 2){
-                //animate abilities page
-                document.getElementById('ability-1').classList.add('ability-1-show');
-                document.getElementById('ability-2').classList.add('ability-2-show');
-                document.getElementById('ability-3').classList.add('ability-3-show');
-                
-                var children = document.getElementById('ability-1').children;
-                var index = 0;
-                //grow hr element
-                children[1].classList.add('growHr-1');
-                //slide each ability over
-                counter=1;
-                for(index=2; index<children.length; index++){
-                    children[index].classList.add('abilityItemMoveRight');
-                    children[index].style.setProperty('animation-delay', counter+'s');
-                    counter += .1;
-                }
-                
-            
-                var children = document.getElementById('ability-2').children;
-                //grow hr element
-                children[1].classList.add('growHr-2');
-                //slide each ability over
-                for(index=2; index<children.length; index++){
-                    children[index].classList.add('abilityItemMoveRight');
-                    children[index].style.setProperty('animation-delay', counter+'s');
-                    counter += .1;
-                }
-                
-                var children = document.getElementById('ability-3').children;
-                //grow hr element
-                children[1].classList.add('growHr-3');
-                //slide each ability over
-                for(index=2; index<children.length; index++){
-                    children[index].classList.add('abilityItemMoveRight');
-                    children[index].style.setProperty('animation-delay', counter+'s');
-                    counter += .1;
-                }
-//                var banner = document.getElementById('newsBanner');
-//                banner.classList.remove("addBanner");
-//                banner.classList.add("closeBanner");
             }else if(destination.index == 3){
-                
-                if(experienceSlide == 0){
-                    document.getElementById('fp-nav').style.display = "block";
-                    document.getElementById('fp-nav').classList.remove('fp-right');
-                    document.getElementById('fp-nav').classList.add('fp-left');
-                    
-                    var sections = document.getElementById('fp-nav').children[0].childNodes.length;
-                    var index = 0;
-                    for(index=0; index<sections; index++){
-                        document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-right')
-                        document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-left')
-                    }
-                }else if(experienceSlide == 1) {
-                  document.getElementById('fp-nav').style.display = "none";
-
-                    
-                }else if(experienceSlide == 2){
-                    document.getElementById('fp-nav').style.display = "block";
-                    document.getElementById('fp-nav').classList.remove('fp-left');
-                    document.getElementById('fp-nav').classList.add('fp-right');
-
-                    var sections = document.getElementById('fp-nav').children[0].childNodes.length;
-                    var index = 0;
-                    for(index=0; index<sections; index++){
-                        document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-left')
-                        document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-right')
-                    }
-                }
-                
-//                var banner = document.getElementById('newsBanner');
-//                banner.classList.remove("closeBanner");
-//                banner.classList.add("addBanner");
-            }else if(destination.index == 4){
                 //animate education page
-                document.getElementById('uwecLogo').classList.add('animateUwecLogo');
                 
-                
-                document.getElementById('educationEauClaire').classList.add('ability-1-show');
-                document.getElementById('educationCourses').classList.add('ability-2-show');
-                document.getElementById('educationBooks').classList.add('ability-3-show');
-                
-                var children = document.getElementById('educationEauClaire').children;
-                children[1].classList.add('growHr-1');
-                var counter=1;
-                for(index=2; index<children.length; index++){
-                    children[index].classList.add('abilityItemMoveRight');
-                    children[index].style.setProperty('animation-delay', counter+'s');
-                    counter += .1;
-                }
-                
-                var children = document.getElementById('educationCourses').children;
-                children[1].classList.add('growHr-2');
-                for(index=2; index<children.length; index++){
-                    children[index].classList.add('abilityItemMoveRight');
-                    children[index].style.setProperty('animation-delay', counter+'s');
-                    counter += .1;
-                }
-                
-                
-                var children = document.getElementById('educationBooks').children;
-                children[1].classList.add('growHr-3');
-                for(index=2; index<children.length; index++){
-                    children[index].classList.add('abilityItemMoveRight');
-                    children[index].style.setProperty('animation-delay', counter+'s');
-                    counter += .1;
-                }
+              animateEducationPage();  
+            }else if(destination.index == 4) {
+               // contact page
+//                    document.getElementById("thankyou").classList.add("slide-in");
+//                    document.getElementById("sendMessageForm").classList.add("slide-in");
 
-            }else if(destination.index == 5) {
-                document.getElementById('quoteContent').innerHTML = "Website developed using plain old HTML, Javascript, CSS, Bootstrap, and with the help of <a href='https://github.com/alvarotrigo/fullPage.js' target='_blank'>Fullpage.js</a>";
-                if(firstTimeAtContact){
-                    firstTimeAtContact = false;
-                    document.getElementById("thankyou").classList.add("slide-in");
-                    document.getElementById("sendMessageForm").classList.add("slide-in");
-
-                }
             }
         },
         afterSlideLoad: function(section, origin, destination, direction){
@@ -951,94 +467,11 @@
         },
         onSlideLeave: function(section, origin, destination, direction){
             
-            if(section.index == 1){
-
-                if(destination.index == 1){
-                    meSlide++;
-                }else{
-                    meSlide--;
-                }
-            }else if(section.index == 3){
-
-                if(direction == "right"){
-                    experienceSlide++;
-                }else if(direction == "left"){
-                    experienceSlide--;
-                }
-            }
-            
-            if((section.index == 3 && destination.index == 2) || (section.index == 1 && destination.index == 1)){
-                document.getElementById('fp-nav').style.display = "block";
-                document.getElementById('fp-nav').classList.remove('fp-left');
-                document.getElementById('fp-nav').classList.add('fp-right');
-                
-                var sections = document.getElementById('fp-nav').children[0].childNodes.length;
-                var index = 0;
-                for(index=0; index<sections; index++){
-                    document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-left')
-                    document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-right')
-                }
-            }else{
-                 document.getElementById('fp-nav').style.display = "block";
-                document.getElementById('fp-nav').classList.remove('fp-right');
-                document.getElementById('fp-nav').classList.add('fp-left');
-                var sections = document.getElementById('fp-nav').children[0].childNodes.length;
-                var index = 0;
-                for(index=0; index<sections; index++){
-                    document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.remove('fp-right')
-                    document.getElementById('fp-nav').children[0].childNodes[index].childNodes[1].classList.add('fp-left')
-                }
-            }
-            
-            if(section.index == 1){
-                if(destination.index == 1){
-                    setTimeout(() => {addTextOnInterest(0);}, 700);
-                    setTimeout(() => {addTextOnInterest(1);}, 1300);
-                    setTimeout(() => {addTextOnInterest(2);}, 1900);
-
-                    setTimeout(() => {removeTextOnImage(0);}, 3000);
-                    setTimeout(() => {removeTextOnImage(1);}, 3200);
-                    setTimeout(() => {removeTextOnImage(2);}, 3400);
-                    document.getElementById("quoteContent").innerHTML = quotes[Math.floor((Math.random()*quotes.length))]; 
-                    onSlideNumber1 = true;
-                }else{
-                    onSlideNumber1 = false;
-                    
-                    document.getElementById("quoteContent").innerHTML = "Navigate to the right to read about my interests or keep scrolling";
-                }
-            }else if(section.index == 3){
-               if(destination.index == 1){
-                   document.getElementById('fp-nav').style.display = "none";
-               }else{
-                   document.getElementById('fp-nav').style.display = "block";
-               }
-            }else{
-               
-            }
         }
     });
 
-    function addTextOnInterest(imageId){
-        var ele = document.getElementsByClassName("interestContainer")[imageId];
-                
-        var children = ele.children;
-        children[0].classList.add('showRealQuick');
-        children[1].classList.add('removeRealQuick');
-    }
-    
-    function removeTextOnImage(imageId){
-        var ele = document.getElementsByClassName("interestContainer")[imageId];
-        
-        var children = ele.children;
-        children[0].classList.remove('showRealQuick');
-        children[1].classList.remove('removeRealQuick');
-    }
     
 </script>
- 
-    
-    
-    
 </body>
 
 </html>

@@ -128,3 +128,101 @@
 #educationEauClaire li span:nth-child(2){
     float: right;
 }
+
+
+.educationItemMoveRight{
+    position: relative;
+    left: -350px;
+    animation: moveRight .7s ease-out 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveRight{
+    from{left: -350px;}
+    to{left: 0px;}
+}
+
+.education-1-show{
+     opacity: 0;
+    background: linear-gradient(transparent 100%, rgba(248, 161, 0, .3));
+    animation: displayYourSelf 1s linear;
+    animation-fill-mode: forwards;
+}
+
+.education-2-show{
+      opacity: 0;
+    background: linear-gradient(transparent 100%, rgba(255, 255, 255, .3));
+    animation: displayYourSelf 1s linear 1s;
+    animation-fill-mode: forwards;
+} 
+
+.education-3-show{
+    opacity: 0;
+    background: linear-gradient(transparent 100%, rgba(255, 255, 255, .3));
+    animation: displayYourSelf 1s linear 2s;
+     
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayYourSelf{
+    0%{
+        opacity: 0;
+        background: linear-gradient(transparent 100%, rgba(255, 255, 255, 0));
+    }
+    10%{
+        background: linear-gradient(transparent 90%, rgba(255, 255, 255, .1));
+    }
+    20%{
+        background: linear-gradient(transparent 80%, rgba(255, 255, 255, .1));
+    }
+    30%{
+        background: linear-gradient(transparent 70%, rgba(255, 255, 255, .1));
+    }
+    40%{
+        background: linear-gradient(transparent 60%, rgba(255, 255, 255, .15));
+    }
+    50%{
+        background: linear-gradient(transparent 50%, rgba(255, 255, 255, .15));
+    }
+    60%{
+        background: linear-gradient(transparent 40%, rgba(255, 255, 255, .15));
+    }
+    70%{
+        background: linear-gradient(transparent 30%, rgba(255, 255, 255, .2));
+    }
+    80%{
+        background: linear-gradient(transparent 20%, rgba(255, 255, 255, .2));
+    }
+    90%{
+        background: linear-gradient(transparent 10%, rgba(255, 255, 255, .2));
+    }
+    100%{
+        opacity: 1;
+        background: linear-gradient(transparent 0%, rgba(255, 255, 255, .2));
+    }
+}
+
+.growHr-1{
+        text-align: center;
+
+    width: 0;
+    animation: grow 1s ease-out 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.growHr-2{
+    width: 0;
+    animation: grow 1s ease-out 2s;
+    animation-fill-mode: forwards;
+}
+
+.growHr-3{
+    width: 0;
+    animation: grow 1s ease-out 2.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes grow{
+    from{width: 0;}
+    to{width: 100%;}
+}
