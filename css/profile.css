@@ -81,22 +81,20 @@
 }
 */
 
-#onHoverTopHalf {
-    position: absolute;
-    height: 60%;
-    z-index: 1;
-/*    background: green;*/
-    width: 100%;
-    top: 0;
+#onHoverTopHalf{
+    position:absolute;
+    height:62%;
+    z-index:1;
+    width:100%;
+    top:0
 }
 
-#onHoverBottomHalf {
-    position: absolute;
-    height: 50%;
-/*    background: red;*/
-    z-index: 1;
-    width: 100%;
-    top: 61%;
+#onHoverBottomHalf{
+    position:absolute;
+    height:38%;
+    z-index:1;
+    width:100%;
+    top:63%
 }
 
 .menuLinks > a {

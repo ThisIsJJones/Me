@@ -17,7 +17,7 @@ function highlight(){
     });
     
     onHoverTopHalf.addEventListener('mouseover', function() {
-       rightContent.style.background = 'linear-gradient(180deg, black 25%, transparent)'
+       rightContent.style.background = 'linear-gradient(180deg, black 23%, transparent)'
        onHoverBottomHalf.style.zIndex = 1;
         onHoverTopHalf.style.zIndex = -1;
         updateDate.style.visibility = 'hidden';
